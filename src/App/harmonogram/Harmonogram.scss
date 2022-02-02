@@ -1,0 +1,101 @@
+@import "../generalStyles/buttons/buttons.scss";
+.harmonogram-upper-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/images/pexels-fauxels-3184317.jpg);
+  background-size: cover;
+  height: 60vh;
+  min-height: 600px;
+  display: flex;
+  text-align: left;
+  justify-content: space-evenly;
+  align-items: left;
+  margin: auto;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.harmonogram-title-container {
+  width: 40%;
+  margin-left: 4rem;
+}
+.harmonogram-search-container {
+  margin-left: 4rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  input {
+    width: 60%;
+    padding: 1rem;
+    border-radius: 25px;
+    font-size: 1.5rem;
+  }
+}
+
+.shadow {
+  box-shadow: clear;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
+  width: 20%;
+  min-height: 50px;
+}
+
+.harmonogram-bottom-container {
+  margin-top: 4rem;
+}
+
+.harmonogram-oferts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.harmonogram-sorts-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.harmonogram-sorting {
+  button {
+    margin: 0.5rem;
+    background-color: rgb(196, 171, 171);
+    border: none;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .harmonogram-upper-container {
+    min-height: auto;
+    gap: 1rem;
+  }
+  .harmonogram-title-container {
+    width: 80%;
+    margin-left: 2rem;
+  }
+  .harmonogram-search-container {
+    margin-left: 2rem;
+    width: 80%;
+    input {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .harmonogram-sorts-container {
+    flex-direction: column;
+  }
+  .harmonogram-current-courses {
+    text-align: center;
+  }
+  .harmonogram-sorting {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+}

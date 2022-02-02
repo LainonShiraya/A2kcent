@@ -1,0 +1,62 @@
+@import "../../generalStyles/colors/colors.scss";
+@import "../../generalStyles/texts/text.scss";
+@import "../../generalStyles/buttons/buttons.scss";
+.category-container {
+  display: flex;
+  flex-direction: row;
+  background-color: $base-green;
+  box-shadow: 10px 10px 10px #887e7e;
+  border-radius: 25px;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 40%;
+  height: 20vh;
+  min-height: 200px;
+  min-width: 300px;
+}
+.category-image {
+  width: 100%;
+  height: 100%;
+}
+.category-image-container {
+  text-align: left;
+  width: 40%;
+}
+
+.category-text-container {
+  text-align: center;
+  margin: auto 0.5rem auto 0.5rem;
+  width: 60%;
+}
+
+@media only screen and (max-width: 1216px) {
+  .category-container {
+    width: 80%;
+    margin: auto;
+  }
+  .category-image-container {
+    width: 40%;
+  }
+  .category-container {
+    height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .category-container {
+    width: 100%;
+    margin: auto;
+  }
+  .category-container {
+    height: 20vh;
+  }
+  .category-text-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .category-container {
+    width: 90%;
+  }
+}

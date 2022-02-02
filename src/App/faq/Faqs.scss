@@ -1,0 +1,22 @@
+@import "../generalStyles/texts/text.scss";
+
+.faqs-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 4rem;
+}
+.faqs-title {
+  font-size: 4rem;
+}
+
+.faqs-description {
+  margin-top: 1rem;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}

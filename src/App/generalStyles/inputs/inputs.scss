@@ -1,0 +1,10 @@
+@import "../colors/colors.scss";
+.input-newsletter {
+  width: 80%;
+  border-radius: 20px;
+  border: 2px solid $base-green;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  margin: auto;
+}

@@ -1,0 +1,78 @@
+@import "../generalStyles/colors/colors.scss";
+.contact-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 6rem;
+}
+.contact-title-container {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #707070;
+    letter-spacing: 0.1em;
+  }
+  h2::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: calc(50% - 50px);
+    border-bottom: 2px solid $base-green;
+    width: 100px;
+    z-index: -1;
+  }
+}
+
+.contact-subtitle-container {
+  margin: auto;
+  margin-top: 3.2rem;
+  text-align: center;
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+.contact-message-container {
+  width: 40%;
+  margin: auto;
+  margin-top: 4rem;
+  text-align: center;
+  input {
+    margin: auto;
+    margin-bottom: auto;
+    min-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  label {
+    color: #707070;
+  }
+  input:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.textarea-container {
+  p {
+    color: #707070;
+  }
+  textarea {
+    min-width: 600px;
+    min-height: 150px;
+    max-height: 250px;
+    max-width: 900px;
+  }
+}
+
+.button-send {
+  margin-top: 2rem;
+  padding: 1rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+}

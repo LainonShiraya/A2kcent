@@ -1,0 +1,33 @@
+.faq-container-faq {
+  width: 100%;
+  border: 1px solid #707070;
+  box-shadow: 5px 5px 10px #b1a7a7;
+  cursor: pointer;
+}
+
+.faq-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin: 1rem;
+  font-size: 1rem;
+}
+.faq-title i {
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 1rem;
+}
+
+.faq-text-container {
+  margin: 1rem;
+  text-align: left;
+}
+
+.faq-text-not-visible {
+  display: none;
+}
+
+.faq-text-show {
+  display: block;
+}/*# sourceMappingURL=Faq.css.map */

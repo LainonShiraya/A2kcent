@@ -1,0 +1,74 @@
+.text-title-text {
+  color: white !important;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-tittle-button-text {
+  color: white;
+  font-size: 2rem;
+  margin: 1rem;
+  text-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+}
+
+.text-image-description-green {
+  margin-top: 0.5rem;
+  color: #2f512a;
+  font-size: 3rem;
+}
+
+.text-image-description-subtext {
+  margin-top: 0.2rem;
+  font-size: 1rem;
+}
+
+.text-posts-title-text {
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+.text-color-green {
+  color: #2f512a;
+}
+
+.text-quote-text {
+  font-size: 3rem;
+  margin-bottom: 0.6rem;
+}
+
+.text-quote-description {
+  font-size: 1rem;
+}
+
+.text-category-title {
+  color: white;
+  font-size: 2rem;
+}
+
+.text-category-titleB {
+  font-size: 2rem;
+}
+
+.newsletter-text-container {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .text-title-text {
+    font-size: 2rem;
+  }
+
+  .text-quote-text {
+    font-size: 2rem;
+  }
+
+  .text-quote-description {
+    font-size: 0.8rem;
+  }
+
+  .newsletter-text-container {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=text.css.map */

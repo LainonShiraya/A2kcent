@@ -1,0 +1,92 @@
+@import "../../generalStyles/colors/colors.scss";
+@import "../../generalStyles/buttons/buttons.scss";
+.promotion-view-container {
+  width: 80%;
+  border-radius: 15px;
+  border: 2px solid $base-green;
+  min-height: 300px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.promotion-image-container {
+  width: 25%;
+  margin: auto;
+}
+
+.promotion-text-container {
+  margin: auto;
+  width: 50%;
+}
+.promotion-buy-container {
+  margin: auto;
+  width: 25%;
+}
+.promotion-image {
+  width: 90%;
+  height: 270px;
+  border-radius: 15px;
+  background-position: center;
+  margin: auto;
+}
+
+.promotion-text-params {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-top: 1.5rem;
+  h5 {
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.promotion-text {
+  width: 60%;
+  margin: auto;
+}
+.promotion-text-description {
+  margin: 2rem;
+  text-align: center;
+}
+
+.promotion-sale {
+  color: $base-green;
+  font-size: 4rem;
+}
+
+.promotion-button {
+  width: 60%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1216px) {
+  .promotion-view-container {
+    flex-direction: column;
+    width: auto;
+    display: block;
+  }
+  .promotion-image-container {
+    display: none;
+  }
+  .promotion-text-container {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .promotion-buy-container {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .promotion-text-params {
+    width: 100%;
+    display: block;
+  }
+}

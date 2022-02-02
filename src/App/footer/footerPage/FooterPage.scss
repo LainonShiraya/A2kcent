@@ -1,0 +1,38 @@
+@import "../../generalStyles/colors/colors.scss";
+.footer-page-container {
+  width: 80%;
+}
+.footer-page-subpages {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
+  text-align: center;
+  color: $base-gray;
+  h2 {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
+.footer-page-title {
+  text-align: center;
+}
+.footer-copyrights-container {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.6rem;
+  h2 {
+    margin: 1rem;
+    color: $base-gray;
+  }
+  hr {
+    color: $base-green;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .footer-page-container {
+    width: 100%;
+  }
+}

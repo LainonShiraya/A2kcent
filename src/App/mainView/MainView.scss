@@ -1,0 +1,32 @@
+@import "../generalStyles/texts/text.scss";
+@import "../generalStyles/buttons/buttons.scss";
+
+.view-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/images/pexels-fauxels-3184317.jpg);
+  background-size: cover;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+  margin: auto;
+}
+.view-detail-container {
+  width: 60%;
+  margin-left: 6rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .view-detail-container {
+    width: 80%;
+    word-break: break-word;
+    margin: auto;
+    text-align: center;
+  }
+  .view-container {
+    height: 60vh;
+    min-width: 300px;
+  }
+}

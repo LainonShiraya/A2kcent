@@ -1,0 +1,41 @@
+.footer-page-container {
+  width: 80%;
+}
+
+.footer-page-subpages {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
+  text-align: center;
+  color: #707070;
+}
+.footer-page-subpages h2 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.footer-page-title {
+  text-align: center;
+}
+
+.footer-copyrights-container {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.6rem;
+}
+.footer-copyrights-container h2 {
+  margin: 1rem;
+  color: #707070;
+}
+.footer-copyrights-container hr {
+  color: #2f512a;
+}
+
+@media only screen and (max-width: 980px) {
+  .footer-page-container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=FooterPage.css.map */

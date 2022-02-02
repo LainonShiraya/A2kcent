@@ -1,0 +1,46 @@
+@import "../generalStyles/lines/lines.scss";
+@import "../generalStyles/texts/text.scss";
+
+.recent-posts-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 6rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.recent-posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+}
+.recent-posts-small {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.recent-posts-big {
+  width: 40%;
+}
+
+@media only screen and (max-width: 1216px) {
+  .recent-posts {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .recent-posts-container {
+    margin-top: 2rem;
+  }
+  .recent-posts-small {
+    width: 100%;
+  }
+  .recent-posts-big {
+    width: 100%;
+  }
+}

@@ -1,0 +1,114 @@
+@import "../colors/colors.scss";
+@import "../texts/text.scss";
+button {
+  cursor: pointer;
+}
+.text-title-button-green {
+  background-color: $base-green;
+  border: none;
+  width: 30%;
+  border-radius: 15px;
+  margin-top: 2rem;
+  min-width: 300px;
+}
+
+.button-category {
+  background-color: white;
+  border: none;
+  color: $base-green;
+  border-radius: 15px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  box-shadow: 10px 10px 10px #2b2929;
+  width: 60%;
+}
+.button-categoryB {
+  background-color: white;
+  color: $base-green;
+  border-radius: 15px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  box-shadow: 10px 10px 10px #a79595;
+  border: 4px solid $base-green;
+  width: 60%;
+}
+.text-post-button-green {
+  background-color: $base-green;
+  color: white;
+  border: none;
+  box-shadow: 10px 10px 10px #141313;
+  border-radius: 5px;
+  width: 30%;
+  min-height: 30px;
+  font-size: 1rem;
+}
+
+.button-ofert {
+  background-color: $base-green;
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #b1a7a7;
+  min-height: 70px;
+  width: 80%;
+}
+
+.button-program {
+  border: none;
+  background-color: inherit;
+  margin-top: 0.5rem;
+}
+.button-newsletter {
+  width: 60%;
+  margin: auto;
+  margin-top: 1.5rem;
+  background-color: $base-green;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+@media only screen and (max-width: 1628px) {
+  .button-ofert {
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .text-title-button-green {
+    width: 80%;
+  }
+  .text-post-button-green {
+    width: 30%;
+  }
+  .button-categoryB {
+    width: 80%;
+  }
+  .button-category {
+    width: 80%;
+  }
+  .button-ofert {
+    margin: 1rem;
+    padding: 0.2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .text-title-button-green {
+    width: 40%;
+    min-width: 200px;
+  }
+  .text-post-button-green {
+    width: 60%;
+  }
+  .button-newsletter {
+    width: 80%;
+  }
+}

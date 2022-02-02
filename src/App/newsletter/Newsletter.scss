@@ -1,0 +1,67 @@
+@import "../generalStyles/colors/colors.scss";
+@import "../generalStyles/texts/text.scss";
+@import "../generalStyles/inputs/inputs.scss";
+@import "../generalStyles/buttons/buttons.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+.newsletter-container {
+  position: relative;
+  margin: auto;
+  margin-top: 4rem;
+  width: 90%;
+  text-align: center;
+  z-index: -10;
+}
+
+.icon-container {
+  opacity: 0.1;
+  font-size: 1.5rem;
+}
+
+.newsletter-text-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -40%);
+  text-align: center;
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.newsletter-input-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+}
+@media only screen and (max-width: 900px) {
+  .icon-container {
+    opacity: 0.1;
+    font-size: 1.2rem;
+  }
+  .newsletter-text-container {
+    width: 100%;
+  }
+  .newsletter-text-container {
+    font-size: 1rem;
+  }
+  .newsletter-input-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1216px) {
+  .newsletter-input-container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}

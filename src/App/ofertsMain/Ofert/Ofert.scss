@@ -1,0 +1,95 @@
+@import "../../generalStyles/colors/colors.scss";
+@import "../../generalStyles/buttons/buttons.css";
+.ofert-container {
+  border: 2px solid $base-green;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  padding: 1.5rem;
+  width: 80%;
+  margin: auto;
+}
+.ofert-description-container {
+  border-right: 2px solid $base-gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.restriction {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.ofert-params-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+}
+.ofert-param-container-type {
+  border-right: 2px solid $base-gray;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.ofert-param-container-date {
+  border-right: 2px solid $base-gray;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.ofert-param-container-price {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.ofert-param-text {
+  margin: auto;
+}
+
+@media only screen and (max-width: 1216px) {
+  .ofert-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .ofert-description-container {
+    border: none;
+  }
+  .ofert-params-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .ofert-params-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    border: none;
+  }
+  .ofert-param-container-type {
+    border: none;
+    border-bottom: 2px solid $base-gray;
+  }
+
+  .ofert-param-container-date {
+    border: none;
+    border-bottom: 2px solid $base-gray;
+  }
+  .ofert-param-container-price {
+    border: none;
+    border-bottom: 2px solid $base-gray;
+  }
+}
