@@ -1,6 +1,6 @@
 import "./Ofert.css";
 import { Link } from "react-router-dom";
-function Ofert({ id, title, type, date, price }) {
+function Ofert({ id, title, type, date, price, place }) {
   return (
     <div className="ofert-container" key={id}>
       <div className="ofert-description-container">
@@ -14,6 +14,10 @@ function Ofert({ id, title, type, date, price }) {
       <div className="ofert-params-container">
         <div className="ofert-param-container-type">
           <h3 className="ofert-param-text">{type}</h3>
+          <h4 className="ofert-param-text">
+            {" "}
+            <i class="fas fa-map-marked"></i> {place}
+          </h4>
         </div>
         <div className="ofert-param-container-date">
           <h3 className="ofert-param-text">{date}</h3>

@@ -90,6 +90,10 @@
   position: relative;
   display: inline-block;
   margin: auto;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 .overlay {
   height: 100%;
@@ -154,7 +158,11 @@
     color: #329e23;
   }
 }
-@media only screen and (max-width: 980px) {
+.logo {
+  max-width: 200px;
+  max-height: 100px;
+}
+@media only screen and (max-width: 1020px) {
   .navbar-container {
     display: none;
   }
@@ -181,9 +189,6 @@
   .navbar-button-contact {
     font-size: 1rem;
     font-weight: 500;
-  }
-  .dropdown-content {
-    position: relative;
   }
 }
 @media screen and (max-height: 450px) {

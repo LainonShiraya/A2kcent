@@ -32,6 +32,7 @@
 .ofert-param-container-type {
   border-right: 2px solid $base-gray;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 }

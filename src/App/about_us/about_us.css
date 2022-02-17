@@ -13,6 +13,51 @@
   margin: auto;
   margin-top: 2rem;
   width: 80%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
+}
+
+.text-paragraph-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.text-paragraph-sub-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.text-color-green-bold {
+  font-weight: 700;
+  color: #2f512a;
+}
+
+.sub-title {
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 690px) {
+  .header-title {
+    font-size: 3.8rem;
+  }
+
+  .about_us_container {
+    width: auto;
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .about_us_text_container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .header-title {
+    font-size: 3.2rem;
+  }
 }/*# sourceMappingURL=about_us.css.map */

@@ -62,10 +62,11 @@
     color: #707070;
   }
   textarea {
-    min-width: 600px;
-    min-height: 150px;
-    max-height: 250px;
-    max-width: 900px;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 10px;
+    resize: none;
+    padding: 0.2rem;
   }
 }
 
@@ -75,4 +76,10 @@
   color: white;
   font-weight: 500;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-message-container {
+    width: 90%;
+  }
 }

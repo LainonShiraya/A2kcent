@@ -9,6 +9,7 @@ function Category() {
         type="Szkolenie"
         date="01.10.2022"
         price="1900"
+        place="online"
       />
       <Ofert
         id="123akphgfdddhok"
@@ -16,6 +17,7 @@ function Category() {
         type="Szkolenie"
         date="01.10.2022"
         price="1900"
+        place="online"
       />
       <Ofert
         id="123akpqqwqwqok"
@@ -23,6 +25,7 @@ function Category() {
         type="Szkolenie"
         date="01.10.2022"
         price="1900"
+        place="online"
       />
       <Ofert
         id="123ak2132132pok"
@@ -30,6 +33,7 @@ function Category() {
         type="Szkolenie"
         date="01.10.2022"
         price="1900"
+        place="online"
       />
       <Ofert
         id="123akpok"
@@ -37,6 +41,7 @@ function Category() {
         type="Szkolenie"
         date="01.10.2022"
         price="1900"
+        place="online"
       />
     </div>
   );

@@ -1,6 +1,6 @@
 import "./Harmonogram.css";
 import Ofert from "../ofertsMain/Ofert/Ofert";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useState } from "react";
 
 function Promotions() {
   const [clicked, setClicked] = useState([false, ""]);
@@ -11,6 +11,7 @@ function Promotions() {
       type: "Szkolenie",
       date: "2022-01-02",
       price: 1900,
+      place: "Warszawa",
     },
     {
       id: "2fsdafdsa",
@@ -18,6 +19,7 @@ function Promotions() {
       type: "Szkolenie",
       date: "2022-01-02",
       price: 1900,
+      place: "online",
     },
     {
       id: "3fdsafdsa",
@@ -25,6 +27,7 @@ function Promotions() {
       type: "Szkolenie",
       date: "2022-01-02",
       price: 1900,
+      place: "online",
     },
     {
       id: "4hgfdhfgd",
@@ -32,6 +35,7 @@ function Promotions() {
       type: "Seminarium",
       date: "2022-01-02",
       price: 1700,
+      place: "online",
     },
   ]);
 
@@ -79,9 +83,6 @@ function Promotions() {
     }
     setOferts(sorted_array);
   };
-  useEffect(() => {
-    console.log(oferts);
-  }, [oferts]);
 
   const ofertsList = useRef(null);
   const filterOfferts = e => {
@@ -91,13 +92,12 @@ function Promotions() {
     for (const ofert of ofertNodes) {
       console.log(ofert.textContent.toUpperCase());
       if (!ofert.textContent.toUpperCase().includes(text.toUpperCase())) {
-        ofert.style.display = "none";
+        ofert.classList.add("hide-element");
       } else {
-        if (window.innerHeight > 800) {
-          ofert.style.display = "grid";
-        } else {
-          ofert.style.display = "flex";
-        }
+        console.log("ofert: ");
+        console.log(ofert.classList);
+        console.log(ofert.classList);
+        ofert.classList.remove("hide-element");
       }
     }
   };
@@ -146,6 +146,7 @@ function Promotions() {
               type={data.type}
               date={data.date}
               price={data.price}
+              place={data.place}
             />
           ))}
         </div>

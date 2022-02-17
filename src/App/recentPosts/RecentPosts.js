@@ -7,7 +7,7 @@ function RecentPosts() {
     <div className="recent-posts-container">
       <div className="recent-posts-title">
         <div className="title">
-          <h2 className="text-posts-title-text">Recent Posts</h2>
+          <h2 className="text-posts-title-text">Aktualności</h2>
         </div>
         <hr className="line-green" />
         <div className="recent-posts">

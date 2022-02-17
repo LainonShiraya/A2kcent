@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import Image from "../../assets/images/logo.png";
 function Navbar() {
   const openNav = e => {
     e.target.offsetParent.lastChild.style.width = "100%";
@@ -21,13 +22,13 @@ function Navbar() {
           <div class="overlay-content">
             <Link to="O_nas">O nas</Link>
             <div class="dropdown">
-              <Link to="link1" className="droplink">
-                Oferta <i class="fas fa-angle-down"></i>
-              </Link>
+              Oferta <i class="fas fa-angle-down"></i>
               <div class="dropdown-content dropdown-content-mobile">
-                <Link to="link1">link_1</Link>
-                <Link to="link2">link_2</Link>
-                <Link to="link3">link_3</Link>
+                <Link to="Dla_Studentów">Dla Studentów</Link>
+                <Link to="laboratory">Dla Labolatoriów</Link>
+                <Link to="companies">Dla Firm</Link>
+                <Link to="producers">Dla Producentów</Link>
+                <Link to="training">Szkolenia Zamknięte</Link>
               </div>
             </div>
             <Link to="Promocje">Promocje</Link>
@@ -40,26 +41,25 @@ function Navbar() {
       <div className="navbar-container">
         <div className="logo-container">
           <Link to="/">
-            <h4>Logo a2kcent</h4>
+            <img alt="logo" src={Image} className="logo"></img>
           </Link>
         </div>
         <div className="subpages-container">
           <Link to="O_nas">O nas</Link>
-          <Link to="Aktualności">Aktualności</Link>
+          {/* <Link to="Aktualności">Aktualności</Link> */}
           <div class="dropdown">
-            <Link to="Oferta">
-              Oferta <i class="fas fa-angle-down"></i>
-            </Link>
+            Oferta <i class="fas fa-angle-down"></i>
             <div class="dropdown-content">
               <Link to="Dla_Studentów">Dla Studentów</Link>
-              <Link to="Dla_Labolatoriów">Dla Labolatoriów</Link>
-              <Link to="Dla_Firm">Dla Firm</Link>
-              <Link to="Dla_Producentów">Dla Producentów</Link>
-              <Link to="Szkolenia_Zamknięte">Szkolenia Zamknięte</Link>
+              <Link to="laboratory">Dla Labolatoriów</Link>
+              <Link to="companies">Dla Firm</Link>
+              <Link to="producers">Dla Producentów</Link>
+              <Link to="training">Szkolenia Zamknięte</Link>
             </div>
           </div>
-          <Link to="Promocje">Promocje</Link>
-          <Link to="Harmonogram">Harmonogram</Link>
+          {/* <Link to="Promocje">Promocje</Link> */}
+          {/* <Link to="Harmonogram">Harmonogram</Link> */}
+          <Link to="Harmonogram">Zapisz się</Link>
           <button className="navbar-button-contact">
             <Link to="Napisz_do_nas">Napisz do nas</Link>
           </button>

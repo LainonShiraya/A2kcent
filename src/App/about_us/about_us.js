@@ -11,60 +11,82 @@ const About_us = () => {
       </div>
       <div className="about_us_text_container">
         <span>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin arcu
-          risus, commodo a tristique vel, mattis eu arcu. In tempor lectus in
-          sem vestibulum accumsan. Morbi et dolor elit. In hac habitasse platea
-          dictumst. Mauris condimentum ligula eget libero finibus, porta
-          sollicitudin elit porta. Nullam ut sollicitudin tellus. Proin sed nisi
-          erat. Etiam pellentesque interdum mauris, auctor maximus est
-          pellentesque eu. Cras imperdiet neque condimentum arcu porttitor
-          semper. Pellentesque habitant morbi tristique senectus et netus et
-          malesuada fames ac turpis egestas. Quisque commodo a erat at
-          scelerisque. Duis a porttitor lacus, vel tempus ex. Mauris tellus
-          lorem, porttitor sit amet lorem at, elementum egestas urna. Curabitur
-          in elit dignissim, consequat justo sed, tempor purus. Vestibulum eget
-          libero sapien. Suspendisse ut molestie neque, aliquet facilisis est.
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-          per inceptos himenaeos. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus. Class aptent taciti
-          sociosqu ad litora torquent per conubia nostra, per inceptos
-          himenaeos. Donec at velit metus. Praesent ac dui egestas, faucibus
-          quam ut, iaculis dolor. Maecenas ipsum orci, aliquam vel gravida in,
-          porta sit amet tortor. Nunc massa tellus, tempus non auctor non,
-          posuere et lacus. Phasellus laoreet congue ligula, vitae posuere
-          turpis vulputate vel. Curabitur volutpat ac arcu vel porttitor.
-          Curabitur egestas venenatis enim, eget fringilla augue gravida at.
-          Aliquam aliquam arcu ac pharetra mollis. Curabitur tincidunt pretium
-          nisl, sed euismod enim fermentum vulputate. Duis ultrices ultrices
-          eros, quis iaculis justo. Maecenas imperdiet, felis at lacinia
-          hendrerit, nulla tellus finibus libero, non tempus dui felis non mi.
-          Morbi quam ante, pulvinar eget lacinia et, pulvinar nec leo. Aliquam
-          vitae rhoncus sem. Maecenas nisl leo, imperdiet vitae condimentum
-          eget, porttitor quis sem. Donec quis lacinia enim. Maecenas hendrerit
-          diam sapien, ut molestie dui auctor non. Nulla nisi lorem, venenatis
-          ut cursus nec, tristique id turpis. Integer eget magna vel ante
-          aliquam placerat eget in nisi. Sed felis turpis, molestie sit amet
-          massa at, euismod vehicula nisi. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Proin arcu risus, commodo a tristique
-          vel, mattis eu arcu. In tempor lectus in sem vestibulum accumsan.
-          Morbi et dolor elit. In hac habitasse platea dictumst. Mauris
-          condimentum ligula eget libero finibus, porta sollicitudin elit porta.
-          Nullam ut sollicitudin tellus. Proin sed nisi erat. Etiam pellentesque
-          interdum mauris, auctor maximus est pellentesque eu. Cras imperdiet
-          neque condimentum arcu porttitor semper. Pellentesque habitant morbi
-          tristique senectus et netus et malesuada fames ac turpis egestas.
-          Quisque commodo a erat at scelerisque. Duis a porttitor lacus, vel
-          tempus ex. Mauris tellus lorem, porttitor sit amet lorem at, elementum
-          egestas urna. Curabitur in elit dignissim, consequat justo sed, tempor
-          purus. Vestibulum eget libero sapien. Suspendisse ut molestie neque,
-          aliquet facilisis est. Class aptent taciti sociosqu ad litora torquent
-          per conubia nostra, per inceptos himenaeos. Orci varius natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-          per inceptos himenaeos. Donec at velit metus. Praesent ac dui egestas,
-          faucibus quam ut, iaculis dolor. Maecenas ipsum orci, aliquam vel
-          gravida in, porta sit amet tortor. Nunc massa tellus, tempus non
-          auctor non, posuere et lacus. Phasellus laoreet congue ligula, vitae
+          Od ponad <span className="text-color-green-bold">15 lat &nbsp;</span>
+          wychodzimy naprzeciw Państwa oczekiwaniom organizując szkolenia,
+          warsztaty, konwersatoria i audity dla laboratoriów badawczych. Stale
+          rozszerzamy zakres tematyczny naszych szkoleń, a także grono
+          współpracujących z nami specjalistów. Chcemy
+          <span className="text-color-green-bold"> zapewnić Państwu </span>{" "}
+          możliwość skorzystania z{" "}
+          <span className="text-color-green-bold">
+            profesjonalnych, rzetelnych i fachowych{" "}
+          </span>
+          szkoleń, ponieważ wiemy, jak we współczesnym świecie są ważne{" "}
+          <span className="text-color-green-bold">
+            wysokie kompetencje, wiedza i umiejętności{" "}
+          </span>{" "}
+          pracowników.
+          <br /> <br />{" "}
+          <span className="text-color-green text-paragraph-title">
+            Oferujemy:
+          </span>
+          <br /> <br />{" "}
+          <div className="align-left">
+            <span className="text-color-green text-paragraph-sub-title">
+              Szkolenia otwarte
+            </span>{" "}
+            – skierowane są do pracowników laboratoriów, chcących poszerzyć
+            swoją wiedzę. Odbiorcą tych szkoleń może być każdy zainteresowany
+            tematyką pracownik laboratorium, a proponowany zakres tematyczny
+            opracowywany jest na podstawie Państwa sugestii przesyłanych w
+            ankietach, a także przedstawianych podczas wspólnych rozmów i
+            dyskusji.
+            <br /> <br />{" "}
+            <span className="text-color-green text-paragraph-sub-title">
+              Szkolenia zamknięte{" "}
+            </span>
+            – w naszej ofercie znajdziecie Państwo szkolenia „szyte na miarę”,
+            oznacza to opracowanie programu szkolenia w oparciu o Państwa
+            indywidualne wytyczne. Szkolenie odbywa się w wyznaczonym i w
+            zaproponowanym przez Państwa czasie. Tego typu forma pozwala na
+            jednorazowe przeszkolenie większej liczby pracowników z wybranego
+            zakresu tematycznego oszczędzając czas i pieniądze.
+            <br /> <br />
+            <span className="text-color-green text-paragraph-sub-title">
+              {" "}
+              Konwersatoria{" "}
+            </span>{" "}
+            – to cyklicznie raz w roku organizowane spotkania z osobami o
+            podobnych doświadczeniach i zainteresowaniach. To okazja do wymiany
+            doświadczeń, poznania różnych rozwiązań tych samych problemów,
+            nawiązania nowych kontaktów. Wykłady prowadzone przez praktyków w
+            danej dziedzinie dają możliwość pogłębienia wiedzy i udziału w
+            fachowych dyskusjach. Audyty wewnętrzne – współpracujący z nami
+            audytorzy sprawdzą Państwa dokumentację i przeprowadzą w pełni
+            kompetentny audyt systemowy i/lub techniczny w przyjaznej i
+            bezstresowej atmosferze. Ocena może być przeprowadzona u Państwa na
+            miejscu lub też on-line.
+            <br /> <br />
+            <span className="text-color-green text-paragraph-sub-title">
+              {" "}
+              Wdrożenia i konsultacje{" "}
+            </span>{" "}
+            – oferujemy wdrożenia różnych systemów zarządzania (ISO 17025, ISO
+            9001, ISO 15189, ISO 45001, ISO 14001), konsultacje i pomoc przy
+            napisaniu lub aktualizacji dokumentacji. Zapewniamy poufność
+            przesłanych informacji.
+            <br /> <br />{" "}
+            <span className="text-color-green text-paragraph-sub-title">
+              Kto z nami pracuje?{" "}
+            </span>
+            – w gronie naszych współpracowników są specjaliści, praktycy i
+            auditorzy (współpracujący z Polskim Centrum Akredytacji) z wielu
+            obszarów badań laboratoryjnych. To osoby kompetentne, z wieloletnim
+            doświadczeniem, które chętnie dzielą się swoją wiedzą i
+            doświadczeniem. Online i stacjonarnie – zarówno szkolenia, jak i
+            audyty prowadzimy w wersji stacjonarnej i wersji on-line przy użyciu
+            platformy Webex.
+          </div>
         </span>
       </div>
     </div>

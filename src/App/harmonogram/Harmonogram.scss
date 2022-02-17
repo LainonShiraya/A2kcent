@@ -65,7 +65,9 @@
     border-radius: 15px;
   }
 }
-
+.hide-element {
+  display: none;
+}
 @media only screen and (max-width: 430px) {
   .harmonogram-upper-container {
     min-height: auto;
@@ -97,5 +99,8 @@
     margin: auto;
     width: 80%;
     margin-bottom: 1rem;
+  }
+  .oferts-container {
+    display: flex;
   }
 }
