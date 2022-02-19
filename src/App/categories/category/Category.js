@@ -7,12 +7,16 @@ function Category({
   setShowDetailTitle,
   textDescription,
   test,
+  link,
+  page,
 }) {
   const clickShowDetail = e => {
     setShowDetail(true);
     setShowDetailText(textDescription);
     setShowDetailTitle(title);
     test.style.display = "flex";
+    console.log(page);
+    link({ page });
   };
   return (
     <div className="category-container">

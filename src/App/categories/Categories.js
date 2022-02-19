@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import CategoryA from "../categories/category/Category";
 import CategoryB from "../categories/category/CategoryB";
+import { Link } from "react-router-dom";
 import "./Categories.css";
 function Categories() {
   const [showDetail, setShowDetail] = useState(false);
   const [showDetailText, setShowDetailText] = useState("");
   const [showDetailTitle, setShowDetailTitle] = useState("");
   const [test, setTest] = useState();
+  const [link, setLink] = useState("");
   const closeDetail = e => {
     myContainer.current.style.display = "none";
   };
@@ -33,7 +35,9 @@ function Categories() {
             <h6>{showDetailText}</h6>
           </div>
           <div className="categoried-category-detail-button">
-            <button> Więcej </button>
+            <Link to={{ pathname: link.page }}>
+              <button>Więcej </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -64,6 +68,8 @@ function Categories() {
           Join 230+ tech leaders who have built software with us. Engage a
           cross-functional team or dedicated experts."
           test={test}
+          link={setLink}
+          page="students"
         />
         <CategoryB
           title="Dla Laboratoriów"
@@ -75,6 +81,8 @@ function Categories() {
            do Twojego laboratorium? Masz nowych i młodych pracowników i chcesz ich przeszkolić? Skorzystaj z naszej oferty.
             Nasz doświadczony zespół pomoże pracownikom laboratoriów badawczych doskonalić swoje kompetencje."
           test={test}
+          link={setLink}
+          page="laboratory"
         />
         <CategoryA
           title="Dla Firm"
@@ -88,6 +96,8 @@ function Categories() {
            Instytutów czy Zakładów Przemysłowych
           "
           test={test}
+          link={setLink}
+          page="companies"
         />
         <CategoryB
           title="Dla producentów"
@@ -101,6 +111,8 @@ function Categories() {
            Dla Kadry Zarządzającej oraz pracowników Firm, Instytutów czy Zakładów Przemysłowych 
           "
           test={test}
+          link={setLink}
+          page="producers"
         />
         <CategoryB
           title="Szkolenia zamknięte"
@@ -115,6 +127,8 @@ function Categories() {
           W celu ustalenia szczegółów prosimy o wysłanie do nas zapytania, a my postaramy się przedstawić Państwu atrakcyjną ofertę. 
           "
           test={test}
+          link={setLink}
+          page="training"
         />
       </div>
       <div className="categories-text">

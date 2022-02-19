@@ -162,6 +162,27 @@
   max-width: 200px;
   max-height: 100px;
 }
+.active {
+  color: $base-green !important;
+  font-weight: 700 !important;
+}
+
+.subpages-container > a:not(:last-child):after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background: $base-green;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.subpages-container > a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 @media only screen and (max-width: 1020px) {
   .navbar-container {
     display: none;
@@ -177,6 +198,13 @@
     position: sticky;
     top: 0;
     height: 0;
+  }
+  .dropdown {
+    color: #818181;
+    font-size: 36px;
+  }
+  a:after {
+    background: #818181;
   }
 }
 @media only screen and (max-width: 1280px) {
@@ -235,5 +263,8 @@
       font-size: 2rem;
       margin: 0;
     }
+  }
+  .dropdown {
+    font-size: 20px;
   }
 }

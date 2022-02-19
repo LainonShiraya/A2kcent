@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Image from "../../assets/images/logo.png";
 function Navbar() {
   const openNav = e => {
@@ -20,6 +20,7 @@ function Navbar() {
             &times;
           </a>
           <div class="overlay-content">
+            <Link to="/">Strona główna</Link>
             <Link to="O_nas">O nas</Link>
             <div class="dropdown">
               Oferta <i class="fas fa-angle-down"></i>
@@ -34,7 +35,6 @@ function Navbar() {
             <Link to="Promocje">Promocje</Link>
             <Link to="Harmonogram">Harmonogram</Link>
             <Link to="Kontakt">Kontakt</Link>
-            <Link to="/">Strona główna</Link>
           </div>
         </div>
       </div>
@@ -45,7 +45,18 @@ function Navbar() {
           </Link>
         </div>
         <div className="subpages-container">
-          <Link to="O_nas">O nas</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+          >
+            Strona główna
+          </NavLink>
+          <NavLink
+            to="O_nas"
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+          >
+            O nas
+          </NavLink>
           {/* <Link to="Aktualności">Aktualności</Link> */}
           <div class="dropdown">
             Oferta <i class="fas fa-angle-down"></i>
@@ -59,10 +70,15 @@ function Navbar() {
           </div>
           {/* <Link to="Promocje">Promocje</Link> */}
           {/* <Link to="Harmonogram">Harmonogram</Link> */}
-          <Link to="Harmonogram">Zapisz się</Link>
-          <button className="navbar-button-contact">
-            <Link to="Napisz_do_nas">Napisz do nas</Link>
-          </button>
+          <NavLink
+            to="Harmonogram"
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+          >
+            Zapisz się
+          </NavLink>
+          <Link to="Napisz_do_nas">
+            <button className="navbar-button-contact">Napisz do nas</button>
+          </Link>
         </div>
       </div>
     </div>

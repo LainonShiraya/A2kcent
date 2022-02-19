@@ -1,7 +1,7 @@
 .contact-container {
   width: 80%;
   margin: auto;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .contact-title-container {
@@ -27,7 +27,7 @@
 
 .contact-subtitle-container {
   margin: auto;
-  margin-top: 3.2rem;
+  margin-top: 1.5rem;
   text-align: center;
 }
 .contact-subtitle-container h2 {
@@ -74,6 +74,25 @@
   color: white;
   font-weight: 500;
   font-size: 1.2rem;
+}
+
+.contact-message-split-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contact-info-container {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 6rem;
+}
+
+.font-subtitle {
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 900px) {
