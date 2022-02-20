@@ -100,3 +100,13 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width: 1020px) {
+  .contact-message-split-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info-container {
+    width: 100%;
+  }
+}

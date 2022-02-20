@@ -85,20 +85,28 @@ function Promotions() {
   };
 
   const ofertsList = useRef(null);
+  const noOferts = useRef(null);
   const filterOfferts = e => {
-    console.log(e.target.value);
     const text = e.target.value;
     const ofertNodes = ofertsList.current.childNodes;
+    let testValue = 0;
     for (const ofert of ofertNodes) {
-      console.log(ofert.textContent.toUpperCase());
       if (!ofert.textContent.toUpperCase().includes(text.toUpperCase())) {
         ofert.classList.add("hide-element");
+        testValue = testValue + 1;
+        console.log(testValue);
       } else {
         console.log("ofert: ");
         console.log(ofert.classList);
         console.log(ofert.classList);
         ofert.classList.remove("hide-element");
+        noOferts.current.style.display = "none";
       }
+    }
+    console.log(testValue);
+    console.log(ofertNodes.length);
+    if (testValue === ofertNodes.length) {
+      noOferts.current.style.display = "block";
     }
   };
   return (
@@ -136,6 +144,13 @@ function Promotions() {
           </div>
           <div className="harmonogram-current-courses">
             <h4>Obecnie odbywa się 39 szkoleń</h4>
+          </div>
+        </div>
+        <div className="harmonogram-no-offerts-container" ref={noOferts}>
+          <div className="harmonogram-communicate-container">
+            <h5>
+              Przepraszamy, nie udało się znaleźć szukanej przez Państwa oferty
+            </h5>
           </div>
         </div>
         <div className="harmonogram-oferts-container" ref={ofertsList}>

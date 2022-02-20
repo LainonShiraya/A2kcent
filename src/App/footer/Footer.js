@@ -8,6 +8,27 @@ function Footer() {
       <div className="footer-pages-contrainer">
         <div className="footer-page-container">
           <div className="footer-page-title">
+            <h2>Społeczność</h2>
+          </div>
+          <div className="footer-page-subpages">
+            <div className="socials">
+              <i class="fab fa-facebook-f fa-2x"></i>
+              <div className="socials-titles">
+                <h2>Facebook</h2>
+                <h2>/a2kcent</h2>
+              </div>
+            </div>
+            <div className="socials">
+              <i class="fab fa-instagram fa-2x"></i>
+              <div className="socials-titles">
+                <h2>Instagram</h2>
+                <h2>@a2kcent</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="footer-page-container">
+          <div className="footer-page-title">
             <h2>Kontakt</h2>
           </div>
           <div className="footer-page-subpages">
@@ -27,43 +48,14 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="footer-page-container">
-          <div className="footer-page-title">
-            <h2>Społeczność</h2>
-          </div>
-          <div className="footer-page-subpages">
-            <div className="socials">
-              <i class="fab fa-facebook-f fa-3x"></i>
-              <div className="socials-titles">
-                <h2>Facebook</h2>
-                <h2>/a2kcent</h2>
-              </div>
-            </div>
-            <div className="socials">
-              <i class="fab fa-instagram fa-2x"></i>
-              <div className="socials-titles">
-                <h2>Instagram</h2>
-                <h2>@a2kcent</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <FooterPage
-          title="Harmonogram"
-          subpages={[
-            "Strona glowna",
-            "Strona glowna",
-            "Strona glowna",
-            "Strona glowna",
-          ]}
-        />
         <FooterPage
           title="Oferta"
           subpages={[
-            "Strona glowna",
-            "Strona glowna",
-            "Strona glowna",
-            "Strona glowna",
+            "Dla Studentów",
+            "Dla Laboratoriów",
+            "Dla Firm",
+            "Dla Producentów",
+            "Dla Szkolenia Zamknięte",
           ]}
         />
         <FooterPage

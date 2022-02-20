@@ -265,6 +265,28 @@ button {
   display: none;
 }
 
+.harmonogram-no-offerts-container {
+  display: none;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #707070;
+  box-shadow: 5px 5px 10px #b1a7a7;
+  border: 2px solid #2f512a;
+  border-radius: 15px;
+  min-height: 100px;
+}
+
+.harmonogram-communicate-container {
+  display: block;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+}
+.harmonogram-communicate-container h5 {
+  margin: 2rem;
+}
+
 @media only screen and (max-width: 430px) {
   .harmonogram-upper-container {
     min-height: auto;

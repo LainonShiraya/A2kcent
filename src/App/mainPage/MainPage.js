@@ -80,7 +80,6 @@ function MainPage() {
               element={
                 <>
                   <AboutUs />
-                  <Faqs />
                   <Footer />
                 </>
               }
@@ -90,7 +89,6 @@ function MainPage() {
               element={
                 <>
                   <Contact />
-                  <Faqs />
                   <Footer />
                 </>
               }
@@ -100,7 +98,6 @@ function MainPage() {
               element={
                 <>
                   <OfertsLaboratory />
-                  <Faqs />
                   <Footer />
                 </>
               }
@@ -110,7 +107,6 @@ function MainPage() {
               element={
                 <>
                   <OfertsCompanies />
-                  <Faqs />
                   <Footer />
                 </>
               }
@@ -120,7 +116,6 @@ function MainPage() {
               element={
                 <>
                   <OfertsProducers />
-                  <Faqs />
                   <Footer />
                 </>
               }
@@ -130,7 +125,6 @@ function MainPage() {
               element={
                 <>
                   <OfertsTraining />
-                  <Faqs />
                   <Footer />
                 </>
               }

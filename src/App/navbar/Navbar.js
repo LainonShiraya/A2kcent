@@ -26,7 +26,7 @@ function Navbar() {
               Oferta <i class="fas fa-angle-down"></i>
               <div class="dropdown-content dropdown-content-mobile">
                 <Link to="Dla_Studentów">Dla Studentów</Link>
-                <Link to="laboratory">Dla Labolatoriów</Link>
+                <Link to="laboratory">Dla Laboratoriów</Link>
                 <Link to="companies">Dla Firm</Link>
                 <Link to="producers">Dla Producentów</Link>
                 <Link to="training">Szkolenia Zamknięte</Link>
@@ -62,7 +62,7 @@ function Navbar() {
             Oferta <i class="fas fa-angle-down"></i>
             <div class="dropdown-content">
               <Link to="Dla_Studentów">Dla Studentów</Link>
-              <Link to="laboratory">Dla Labolatoriów</Link>
+              <Link to="laboratory">Dla Laboratoriów</Link>
               <Link to="companies">Dla Firm</Link>
               <Link to="producers">Dla Producentów</Link>
               <Link to="training">Szkolenia Zamknięte</Link>
