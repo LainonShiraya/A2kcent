@@ -1,6 +1,7 @@
 import "./PostBig.css";
-import Image from "../../../assets/images/post-sample.jpeg";
-function PostBig({ title, info, date }) {
+//import Image from "../../../assets/images/post-sample.jpeg";
+function PostBig({ title, info, date, Image }) {
+  console.log(info);
   return (
     <div
       className="post-big-container"
@@ -11,10 +12,11 @@ function PostBig({ title, info, date }) {
           <h3>{title}</h3>
         </div>
         <div className="post-big-text-info">
-          <span>{info}</span>
+          {info.map(e => {
+            return <p>{e}</p>;
+          })}
         </div>
         <div className="post-big-text-date-container">
-          <button className="text-post-button-green">Read more</button>
           <h5 className="text-post-big-date">{date}</h5>
         </div>
       </div>

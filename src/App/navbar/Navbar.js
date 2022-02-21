@@ -26,15 +26,15 @@ function Navbar() {
               Oferta <i class="fas fa-angle-down"></i>
               <div class="dropdown-content dropdown-content-mobile">
                 <Link to="Dla_Studentów">Dla Studentów</Link>
-                <Link to="laboratory">Dla Laboratoriów</Link>
-                <Link to="companies">Dla Firm</Link>
-                <Link to="producers">Dla Producentów</Link>
-                <Link to="training">Szkolenia Zamknięte</Link>
+                <Link to="../laboratory">Dla Laboratoriów</Link>
+                <Link to="../companies">Dla Firm</Link>
+                <Link to="../producers">Dla Producentów</Link>
+                <Link to="../training">Szkolenia Zamknięte</Link>
               </div>
             </div>
-            <Link to="Promocje">Promocje</Link>
-            <Link to="Harmonogram">Harmonogram</Link>
-            <Link to="Kontakt">Kontakt</Link>
+            <Link to="../Promocje">Promocje</Link>
+            <Link to="../Harmonogram">Harmonogram</Link>
+            <Link to="../Kontakt">Kontakt</Link>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@ function Navbar() {
             Strona główna
           </NavLink>
           <NavLink
-            to="O_nas"
+            to="../O_nas"
             className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
             O nas
@@ -62,21 +62,21 @@ function Navbar() {
             Oferta <i class="fas fa-angle-down"></i>
             <div class="dropdown-content">
               <Link to="Dla_Studentów">Dla Studentów</Link>
-              <Link to="laboratory">Dla Laboratoriów</Link>
-              <Link to="companies">Dla Firm</Link>
-              <Link to="producers">Dla Producentów</Link>
-              <Link to="training">Szkolenia Zamknięte</Link>
+              <Link to="../laboratory">Dla Laboratoriów</Link>
+              <Link to="../companies">Dla Firm</Link>
+              <Link to="../producers">Dla Producentów</Link>
+              <Link to="../training">Szkolenia Zamknięte</Link>
             </div>
           </div>
           {/* <Link to="Promocje">Promocje</Link> */}
           {/* <Link to="Harmonogram">Harmonogram</Link> */}
           <NavLink
-            to="Harmonogram"
+            to="../Harmonogram"
             className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
             Zapisz się
           </NavLink>
-          <Link to="Napisz_do_nas">
+          <Link to="../Napisz_do_nas">
             <button className="navbar-button-contact">Napisz do nas</button>
           </Link>
         </div>

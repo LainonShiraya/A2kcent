@@ -1,0 +1,287 @@
+.navbar-container {
+  background-color: white;
+  padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  z-index: 100;
+  border-bottom: 2px solid #2f512a;
+}
+
+.subpages-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+.subpages-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: auto;
+}
+
+.logo-container {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar-button-contact {
+  background-color: inherit;
+  border: none;
+  border: 2px solid #2f512a;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 0.3rem;
+}
+.navbar-button-contact:hover {
+  background-color: #2f512a;
+  color: white;
+  transition: background-color 1.5s ease-in-out;
+  transition: color 0.5s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content-mobile {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown-content a:active {
+  background-color: #ddd;
+}
+
+.dropdown-content-mobile a:hover {
+  background-color: #2e2929;
+}
+.dropdown-content-mobile a:hover a:active {
+  background-color: #2e2929;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content,
+.dropdown:active .dropdown-content {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.overlay-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 2rem;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus,
+.overlay a:active {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.navbar-general-container {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-mobile button {
+  background-color: inherit;
+  border: none;
+  font-size: 3rem;
+  margin: 1rem;
+  color: #329e23;
+}
+
+.logo {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+.active {
+  color: #2f512a !important;
+  font-weight: 700 !important;
+}
+
+.subpages-container > a:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background: #2f512a;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.subpages-container > a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media only screen and (max-width: 1020px) {
+  .navbar-container {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: inline;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+    margin: 1rem;
+  }
+
+  .navbar-general-container {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 0;
+  }
+
+  .dropdown {
+    color: #818181;
+    font-size: 36px;
+  }
+
+  a:after {
+    background: #818181;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .subpages-container a {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .navbar-button-contact {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .navbar-mobile {
+    margin: 0.2rem;
+  }
+  .navbar-mobile button {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .navbar-mobile {
+    margin: 0.2rem;
+    margin-top: 1rem;
+  }
+  .navbar-mobile button {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .dropdown {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

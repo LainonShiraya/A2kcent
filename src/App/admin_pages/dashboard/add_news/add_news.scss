@@ -1,0 +1,45 @@
+.input-type-radio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+  text-align: center;
+  label {
+    margin: auto;
+  }
+  input {
+    margin: auto;
+  }
+}
+.contact-message-container-admin {
+  width: 40%;
+  margin: auto;
+  margin-top: auto;
+  margin-top: 4rem;
+  text-align: center;
+  input {
+    margin: auto;
+    margin-bottom: auto;
+    min-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
+.contact-select-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  select {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    list-style: none;
+    width: 40%;
+    text-align: center;
+  }
+}

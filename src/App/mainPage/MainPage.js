@@ -17,6 +17,12 @@ import OfertsLaboratory from "../oferts/oferts_laboratory/oferts_laboratory";
 import OfertsCompanies from "../oferts/oferts_companies/oferts_companies";
 import OfertsProducers from "../oferts/oferts_producers/oferts_producers";
 import OfertsTraining from "../oferts/oferts_closed_training/oferts_closed_training";
+import Logging from "../admin_pages/logging/logging";
+import Dashboard from "../admin_pages/dashboard/dashboard";
+import AddTraining from "../admin_pages/dashboard/add_news/add_news";
+import EditTraining from "../admin_pages/dashboard/edit_news/edit_news";
+import NavbarAdmin from "../admin_pages/dashboard/navbar/Navbar";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -29,12 +35,12 @@ function MainPage() {
     <Router>
       <ScrollToTop>
         <div className="body-container">
-          <Navbar />
           <Routes>
             <Route
               path="/"
               element={
                 <>
+                  <Navbar />
                   <MainView />
                   <OpinionView />
                   <RecentPosts />
@@ -50,6 +56,7 @@ function MainPage() {
               path="/Promocje"
               element={
                 <>
+                  <Navbar />
                   <Promotions />
                   <Footer />
                 </>
@@ -59,6 +66,7 @@ function MainPage() {
               path="/Harmonogram"
               element={
                 <>
+                  <Navbar />
                   <Harmonogram />
                   <Faqs />
                   <Footer />
@@ -69,6 +77,7 @@ function MainPage() {
               path="/Harmonogram/:key/:title"
               element={
                 <>
+                  <Navbar />
                   <HarmonogramOfert />
                   <Faqs />
                   <Footer />
@@ -79,6 +88,7 @@ function MainPage() {
               path="/O_nas"
               element={
                 <>
+                  <Navbar />
                   <AboutUs />
                   <Footer />
                 </>
@@ -88,6 +98,7 @@ function MainPage() {
               path="/Napisz_do_nas"
               element={
                 <>
+                  <Navbar />
                   <Contact />
                   <Footer />
                 </>
@@ -97,6 +108,7 @@ function MainPage() {
               path="/laboratory"
               element={
                 <>
+                  <Navbar />
                   <OfertsLaboratory />
                   <Footer />
                 </>
@@ -106,6 +118,7 @@ function MainPage() {
               path="/companies"
               element={
                 <>
+                  <Navbar />
                   <OfertsCompanies />
                   <Footer />
                 </>
@@ -115,6 +128,7 @@ function MainPage() {
               path="/producers"
               element={
                 <>
+                  <Navbar />
                   <OfertsProducers />
                   <Footer />
                 </>
@@ -124,8 +138,44 @@ function MainPage() {
               path="/training"
               element={
                 <>
+                  <Navbar />
                   <OfertsTraining />
                   <Footer />
+                </>
+              }
+            />
+            <Route
+              path="/admin"
+              element={
+                <>
+                  <Logging />
+                </>
+              }
+            />
+            <Route
+              path="/admin/dashboard"
+              element={
+                <>
+                  <NavbarAdmin />
+                  <Dashboard />
+                </>
+              }
+            />
+            <Route
+              path="/admin/dashboard/add"
+              element={
+                <>
+                  <NavbarAdmin />
+                  <AddTraining />
+                </>
+              }
+            />
+            <Route
+              path="/admin/dashboard/edit/:id"
+              element={
+                <>
+                  <NavbarAdmin />
+                  <EditTraining />
                 </>
               }
             />

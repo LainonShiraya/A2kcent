@@ -21,15 +21,23 @@
 }
 
 .post-big-text-title {
-  margin-left: 2rem;
   font-size: 1.5rem;
-  margin: 2rem;
+  margin: auto;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .post-big-text-info {
-  margin: 2rem;
-  font-size: 1rem;
-  text-align: left;
+  margin: auto;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 80%;
+  font-weight: 500;
+  color: white;
+  font-size: 20px;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+  word-break: break-word !important;
 }
 
 .post-big-text-date-container {
@@ -38,8 +46,8 @@
 
 .text-post-big-date {
   text-align: right;
-  margin: 1rem;
-  font-size: 0.8rem;
+  margin: 1.4rem;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 628px) {
