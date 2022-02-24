@@ -18,15 +18,49 @@
   margin-left: 6rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1020px) {
   .view-detail-container {
     width: 80%;
     word-break: break-word;
     margin: auto;
     text-align: center;
+    .text-title-text {
+      margin-top: 4rem !important;
+      font-size: 2.5rem !important;
+    }
   }
   .view-container {
     height: 60vh;
+    min-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .view-detail-container {
+    width: 80%;
+    word-break: break-word;
+    margin: auto;
+    text-align: center;
+    .text-title-text {
+      margin-top: 4rem !important;
+      font-size: 2.5rem !important;
+    }
+  }
+  .view-container {
+    height: 60vh;
+    min-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .view-detail-container {
+    .text-title-text {
+      margin-top: 1rem !important;
+      font-size: 2rem !important;
+    }
+  }
+  .view-container {
+    height: 40vh;
     min-width: 300px;
   }
 }

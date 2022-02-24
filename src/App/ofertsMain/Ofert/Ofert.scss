@@ -6,8 +6,13 @@
   display: grid;
   grid-template-columns: 30% 50% 20%;
   padding: 1.5rem;
-  width: 80%;
+  width: 90%;
   margin: auto;
+  a {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
 }
 .ofert-description-container {
   border-right: 2px solid $base-gray;
@@ -24,6 +29,38 @@
   text-align: center;
   margin: auto;
 }
+.on-hover-text-container {
+  h3 {
+    font-weight: 500 !important;
+    font-size: 1.2rem;
+    max-width: 500px;
+    max-height: 200px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  &:focus:after,
+  &:hover:after {
+    content: attr(data-text);
+    overflow: visible;
+    text-overflow: inherit;
+    background: #fff;
+    position: absolute;
+    left: auto;
+    top: auto;
+    width: auto;
+    max-width: 20rem;
+    border: 1px solid #eaebec;
+    padding: 0 0.5rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28);
+    white-space: normal;
+    word-wrap: break-word;
+    display: block;
+    color: black;
+    margin-top: -1.25rem;
+  }
+}
 .ofert-params-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -35,6 +72,15 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  h3 {
+    font-weight: 500 !important;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 0.4rem;
+  }
+  h4 {
+    margin: 0;
+  }
 }
 
 .ofert-param-container-date {
@@ -42,15 +88,25 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  h3 {
+    font-weight: 500 !important;
+    font-size: 1.2rem;
+  }
 }
 
 .ofert-param-container-price {
   display: flex;
   justify-content: center;
   text-align: center;
+  h3 {
+    font-weight: 500 !important;
+    font-size: 1.2rem;
+  }
 }
 .ofert-param-text {
   margin: auto;
+  font-weight: 500 !important;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 1216px) {
@@ -68,6 +124,11 @@
     display: grid;
     grid-template-columns: auto auto auto;
     width: 100%;
+  }
+  .restriction {
+    h3 {
+      max-width: inherit;
+    }
   }
 }
 

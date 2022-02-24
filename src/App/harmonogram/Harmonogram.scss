@@ -46,6 +46,8 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 90%;
+  margin: auto;
 }
 
 .harmonogram-sorts-container {
@@ -57,14 +59,25 @@
 .harmonogram-sorting {
   button {
     margin: 0.5rem;
-    background-color: rgb(196, 171, 171);
     border: none;
     padding: 0.2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    border-radius: 15px;
+    border-radius: 10px;
+    background-color: inherit;
+    color: #2f512a;
+    border: 2px solid #2f512a;
+    &:hover,
+    &:active,
+    &:focus {
+      border: 2px solid inherit;
+      background-color: #2f512a;
+      color: white;
+      transition: 0.4s;
+    }
   }
 }
+
 .hide-element {
   display: none;
 }
@@ -89,6 +102,55 @@
     margin: 2rem;
   }
 }
+
+@media only screen and (max-width: 1090px) {
+  .harmonogram-title-container {
+    width: 60%;
+    margin-left: 2rem;
+    margin-top: 4rem;
+  }
+  .harmonogram-search-container {
+    input {
+      width: 60%;
+    }
+  }
+  .harmonogram-upper-container {
+    min-height: 400px;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .harmonogram-sorts-container {
+    flex-direction: column;
+  }
+  .harmonogram-current-courses {
+    text-align: center;
+  }
+  .harmonogram-sorting {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+  .oferts-container {
+    display: flex;
+  }
+  .restriction {
+    h3 {
+      margin: auto;
+    }
+  }
+  .harmonogram-title-container {
+    width: 80%;
+  }
+  .harmonogram-search-container {
+    input {
+      width: 80%;
+    }
+  }
+}
+
 @media only screen and (max-width: 430px) {
   .harmonogram-upper-container {
     min-height: auto;
@@ -105,23 +167,9 @@
       width: 80%;
     }
   }
-}
-
-@media only screen and (max-width: 900px) {
-  .harmonogram-sorts-container {
-    flex-direction: column;
-  }
-  .harmonogram-current-courses {
-    text-align: center;
-  }
-  .harmonogram-sorting {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 80%;
-    margin-bottom: 1rem;
-  }
-  .oferts-container {
-    display: flex;
+  .harmonogram-search-container {
+    input {
+      width: 100%;
+    }
   }
 }

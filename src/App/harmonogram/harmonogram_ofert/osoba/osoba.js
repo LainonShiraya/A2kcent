@@ -12,9 +12,15 @@ const Osoba = ({ Id, Imie, Nazwisko, Email, osoby, setOsoby }) => {
         <i class="fas fa-trash"></i>
       </div>
       <i class="fas fa-user-tie avatar"></i>
-      <h1>{Imie}</h1>
-      <h1>{Nazwisko}</h1>
-      <h1>{Email}</h1>
+      <div className="text-hover " data-text={Imie}>
+        <h1>{Imie}</h1>
+      </div>
+      <div className="text-hover " data-text={Nazwisko}>
+        <h1 data-text={Nazwisko}>{Nazwisko}</h1>
+      </div>
+      <div className="text-hover " data-text={Email}>
+        <h1 data-text={Email}>{Email}</h1>
+      </div>
     </div>
   );
 };

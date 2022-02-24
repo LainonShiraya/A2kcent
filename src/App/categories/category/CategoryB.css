@@ -55,9 +55,9 @@
   font-size: 2rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1020px) {
   .text-title-text {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .text-quote-text {
@@ -129,9 +129,9 @@
   font-size: 2rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1020px) {
   .text-title-text {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .text-quote-text {
@@ -152,7 +152,6 @@ button {
 
 .text-title-button-green {
   background-color: #2f512a;
-  border: none;
   width: 30%;
   border-radius: 15px;
   margin-top: 2rem;
@@ -161,7 +160,6 @@ button {
 
 .button-category {
   background-color: white;
-  border: none;
   color: #2f512a;
   border-radius: 15px;
   padding: 0.5rem;
@@ -188,7 +186,6 @@ button {
 .text-post-button-green {
   background-color: #2f512a;
   color: white;
-  border: none;
   box-shadow: 10px 10px 10px #141313;
   border-radius: 5px;
   width: 30%;
@@ -199,18 +196,19 @@ button {
 .button-ofert {
   background-color: #2f512a;
   color: white;
-  font-weight: 700;
-  font-size: 1.4rem;
+  font-weight: 500 !important;
+  font-size: 1.4rem !important;
   border-radius: 20px;
   box-shadow: 5px 5px 10px #b1a7a7;
-  min-height: 70px;
-  width: 80%;
+  min-height: 60px !important;
+  padding-left: 1.8rem !important;
+  padding-right: 1.8rem !important;
 }
 
 .button-program {
-  border: none;
   background-color: inherit;
   margin-top: 0.5rem;
+  border: none;
 }
 
 .button-newsletter {
@@ -219,10 +217,9 @@ button {
   margin-top: 1.5rem;
   background-color: #2f512a;
   color: white;
-  font-weight: 700;
-  border: none;
+  font-weight: 500 !important;
   border-radius: 15px;
-  font-size: 2rem;
+  font-size: 1.5rem !important;
   padding: 0.5rem;
 }
 
@@ -251,8 +248,12 @@ button {
   }
 
   .button-ofert {
-    margin: 1rem;
-    padding: 0.2rem;
+    margin: 0.5rem !important;
+    padding: 1.5rem !important;
+  }
+
+  .ofert-container {
+    padding: 1rem !important;
   }
 }
 @media only screen and (max-width: 400px) {

@@ -48,8 +48,10 @@
     font-weight: 700;
     margin: 0.5rem;
     &:hover {
-      color: #000;
-      transition: 0.5s;
+      i {
+        color: #fff;
+        transition: 0.5s;
+      }
     }
   }
 }

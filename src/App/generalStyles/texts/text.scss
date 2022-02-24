@@ -55,9 +55,9 @@
 .newsletter-text-container {
   font-size: 2rem;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1020px) {
   .text-title-text {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   .text-quote-text {
     font-size: 2rem;

@@ -32,7 +32,7 @@ function Navbar() {
             <img alt="logo" src={Image} className="logo"></img>
           </Link>
         </div>
-        <div className="subpages-container">
+        <div className="subpages-container-admin">
           <NavLink
             to="../admin/dashboard"
             className={({ isActive }) => (isActive ? "active" : "inactive")}

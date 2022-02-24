@@ -12,16 +12,23 @@ function Navbar() {
   return (
     <div className="navbar-general-container">
       <div className="navbar-mobile">
-        <button onClick={openNav}>
-          <i class="fas fa-bars"></i>
-        </button>
+        <div className="navbar-button-hamburger-container">
+          <Link to="/">
+            <img alt="logo" src={Image} className="logo"></img>
+          </Link>
+          <button onClick={openNav}>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </button>
+        </div>
         <div id="myNav" class="overlay">
           <a href="#test" class="closebtn" onClick={closeNav}>
             &times;
           </a>
           <div class="overlay-content">
             <Link to="/">Strona główna</Link>
-            <Link to="O_nas">O nas</Link>
+            <Link to="../O_nas">O nas</Link>
             <div class="dropdown">
               Oferta <i class="fas fa-angle-down"></i>
               <div class="dropdown-content dropdown-content-mobile">
@@ -32,9 +39,8 @@ function Navbar() {
                 <Link to="../training">Szkolenia Zamknięte</Link>
               </div>
             </div>
-            <Link to="../Promocje">Promocje</Link>
-            <Link to="../Harmonogram">Harmonogram</Link>
-            <Link to="../Kontakt">Kontakt</Link>
+            <Link to="../Harmonogram">Zapisz się</Link>
+            <Link to="../Napisz_do_nas">Kontakt</Link>
           </div>
         </div>
       </div>

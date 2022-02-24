@@ -84,11 +84,10 @@
 
 .contact-info-container {
   width: 40%;
-  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 6rem;
+  margin-top: 4.2rem;
 }
 
 .font-subtitle {
@@ -108,5 +107,14 @@
 
   .contact-info-container {
     width: 100%;
+    margin-top: 3rem;
+  }
+
+  .contact-info-container {
+    text-align: center;
+  }
+
+  .contact-container {
+    margin-top: 6rem;
   }
 }/*# sourceMappingURL=contact.css.map */
