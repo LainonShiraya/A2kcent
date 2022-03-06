@@ -11,8 +11,8 @@ function OpinionView() {
           </span>
         </div>
         <div className="opinion-container">
-          <i className="fas fa-users fa-6x icon-color-green"></i>
-          <h3 className="text-image-description-green"> 150+</h3>
+          <i className="fas fa-users fa-7x icon-color-green"></i>
+          <h4 className="text-image-description-green"> 150+</h4>
           <span className="text-image-description-subtext">
             People completed the course
           </span>

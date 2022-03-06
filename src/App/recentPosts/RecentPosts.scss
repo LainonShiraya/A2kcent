@@ -1,6 +1,3 @@
-@import "../generalStyles/lines/lines.scss";
-@import "../generalStyles/texts/text.scss";
-
 .recent-posts-container {
   width: 80%;
   margin: auto;
@@ -16,6 +13,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   margin: auto;
+  gap: 2rem;
 }
 .recent-posts-small {
   width: 40%;
@@ -41,6 +39,12 @@
     width: 100%;
   }
   .recent-posts-big {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .recent-posts {
     width: 100%;
   }
 }

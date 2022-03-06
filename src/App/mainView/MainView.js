@@ -5,8 +5,7 @@ function MainView() {
     <div className="view-container">
       <div className="view-detail-container">
         <h3 className="text-title-text">
-          These graphic-designi mages from south korea are glorious to beholdea
-          collection of hermit...
+          Nasza firma oferuje organizację i obsługę szkoleń w pełnym zakresie.
         </h3>
         <Link to="O_nas">
           <button className="text-title-button-green">

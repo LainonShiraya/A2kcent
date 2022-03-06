@@ -12,14 +12,14 @@
   border-bottom: 2px solid #2f512a;
 }
 
-.subpages-container {
+.subpages-container-admin {
   display: flex;
   flex-direction: row;
   gap: 3rem;
   text-decoration: none;
   margin-right: 2rem;
 }
-.subpages-container a {
+.subpages-container-admin a {
   text-decoration: none;
   color: black;
   font-size: 1.2rem;

@@ -1,19 +1,15 @@
-@import "../generalStyles/icons/icons.scss";
-@import "../generalStyles/texts/text.scss";
-
 .opinion-view-container {
   width: 80%;
   margin: auto;
 }
 
 .opinion-list-container {
-  width: 80%;
   margin: auto;
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 6rem;
+  margin-top: 4rem;
   gap: 2rem;
 }
 

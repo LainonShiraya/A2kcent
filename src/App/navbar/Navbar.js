@@ -83,7 +83,7 @@ function Navbar() {
             Zapisz się
           </NavLink>
           <Link to="../Napisz_do_nas">
-            <button className="navbar-button-contact">Napisz do nas</button>
+            <button className="navbar-button-contacts">Napisz do nas</button>
           </Link>
         </div>
       </div>

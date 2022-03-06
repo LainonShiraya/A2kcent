@@ -35,20 +35,37 @@
   margin-bottom: auto;
 }
 
-.navbar-button-contact {
+.navbar-button-contacts {
   background-color: inherit;
-  border: none;
-  border: 2px solid #2f512a;
   font-size: 1.2rem;
   font-weight: 500;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 0.3rem;
+  position: relative;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  border: none;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
 }
-.navbar-button-contact:hover {
+.navbar-button-contacts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
   background-color: #2f512a;
+  border-radius: 15px;
+  z-index: -1;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+.navbar-button-contacts:hover, .navbar-button-contacts:active {
   color: white;
-  transition: background-color 1.5s ease-in-out;
-  transition: color 0.5s;
+}
+.navbar-button-contacts:hover::before, .navbar-button-contacts:active::before {
+  width: 100%;
 }
 
 .dropdown-content {

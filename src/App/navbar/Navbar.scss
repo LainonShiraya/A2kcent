@@ -33,19 +33,41 @@
   margin-top: auto;
   margin-bottom: auto;
 }
-.navbar-button-contact {
+
+.navbar-button-contacts {
   background-color: inherit;
-  border: none;
-  border: 2px solid $base-green;
   font-size: 1.2rem;
   font-weight: 500;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 0.3rem;
-  &:hover {
+  position: relative;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  border: none;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
     background-color: $base-green;
+    border-radius: 15px;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+  }
+  &:hover,
+  &:active {
     color: white;
-    transition: background-color 1.5s ease-in-out;
-    transition: color 0.5s;
+  }
+  &:hover::before,
+  &:active::before {
+    width: 100%;
   }
 }
 

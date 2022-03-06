@@ -1,12 +1,9 @@
-@import "../generalStyles/texts/text.scss";
-@import "../generalStyles/buttons/buttons.scss";
-
 .view-container {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../../assets/images/pexels-fauxels-3184317.jpg);
   background-size: cover;
-  height: 100vh;
-  min-height: 600px;
+  height: 70vh;
+  min-height: 400px;
   display: flex;
   text-align: left;
   justify-content: left;
@@ -54,13 +51,15 @@
 
 @media only screen and (max-width: 600px) {
   .view-detail-container {
+    width: 90%;
+    margin: auto;
     .text-title-text {
-      margin-top: 1rem !important;
       font-size: 2rem !important;
     }
   }
   .view-container {
-    height: 40vh;
     min-width: 300px;
+    margin: auto;
+    justify-content: center;
   }
 }

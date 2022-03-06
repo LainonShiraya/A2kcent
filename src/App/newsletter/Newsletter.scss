@@ -1,7 +1,4 @@
 @import "../generalStyles/colors/colors.scss";
-@import "../generalStyles/texts/text.scss";
-@import "../generalStyles/inputs/inputs.scss";
-@import "../generalStyles/buttons/buttons.scss";
 .container {
   display: flex;
   flex-direction: column;
@@ -51,13 +48,10 @@
   .newsletter-text-container {
     font-size: 1rem;
   }
-  .newsletter-input-container {
-    width: 100%;
-  }
 }
 @media only screen and (max-width: 1216px) {
   .newsletter-input-container {
-    width: 80%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 600px) {

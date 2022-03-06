@@ -14,7 +14,6 @@
 }
 
 .text-image-description-green {
-  margin-top: 0.5rem;
   color: #2f512a;
   font-size: 3rem;
 }
@@ -70,5 +69,14 @@
 
   .newsletter-text-container {
     font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .text-tittle-button-text {
+    font-size: 1.2rem !important;
+  }
+
+  .text-posts-title-text {
+    font-size: 2.5rem !important;
   }
 }/*# sourceMappingURL=text.css.map */

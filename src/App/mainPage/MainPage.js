@@ -1,4 +1,9 @@
 import "./MainPage.css";
+import "../generalStyles/buttons/buttons.css";
+import "../generalStyles/inputs/inputs.css";
+import "../generalStyles/lines/lines.css";
+import "../generalStyles/texts/text.css";
+import "../generalStyles/icons/icons.css";
 import Navbar from "../navbar/Navbar";
 import MainView from "../mainView/MainView";
 import OpinionView from "../opinionView/OpinionView";
@@ -42,7 +47,7 @@ function MainPage() {
                 <>
                   <Navbar />
                   <MainView />
-                  <OpinionView />
+                  {/* <OpinionView /> */}
                   <RecentPosts />
                   <Categories />
                   <Oferts />
