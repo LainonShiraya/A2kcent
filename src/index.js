@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename="/A2kcent">
+    <BrowserRouter basename="/public">
       <MainPage />
     </BrowserRouter>
   </React.StrictMode>,
