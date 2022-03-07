@@ -1,7 +1,7 @@
 {
   "name": "a2kcent",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://lainonshiraya.github.io/A2kcent",
   "dependencies": {
     "-": "^0.0.1",
