@@ -37,7 +37,7 @@ import {
 import { useEffect } from "react";
 function MainPage() {
   return (
-    <Router>
+    <Router basename="/A2kcent">
       <ScrollToTop>
         <div className="body-container">
           <Routes>
