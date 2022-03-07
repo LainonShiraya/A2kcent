@@ -5,12 +5,9 @@ import "./App/root.css";
 import MainPage from "./App/mainPage/MainPage";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
-import { BrowserRouter } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename={window.location.pathname || ""}>
-      <MainPage />
-    </BrowserRouter>
+    <MainPage />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -29,7 +29,7 @@ import EditTraining from "../admin_pages/dashboard/edit_news/edit_news";
 import NavbarAdmin from "../admin_pages/dashboard/navbar/Navbar";
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   useLocation,
