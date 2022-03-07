@@ -42,7 +42,7 @@ function MainPage() {
         <div className="body-container">
           <Routes>
             <Route
-              path="/"
+              path="*"
               element={
                 <>
                   <Navbar />
