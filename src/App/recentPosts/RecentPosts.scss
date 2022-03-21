@@ -1,11 +1,12 @@
 .recent-posts-container {
-  width: 80%;
+  width: 70% !important;
   margin: auto;
   margin-top: 6rem;
 }
 
 .title {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .recent-posts {
@@ -26,7 +27,11 @@
 .recent-posts-big {
   width: 40%;
 }
-
+@media only screen and (max-width: 1600px) {
+  .recent-posts-container {
+    width: 80% !important;
+  }
+}
 @media only screen and (max-width: 1216px) {
   .recent-posts {
     flex-direction: column;
@@ -41,10 +46,19 @@
   .recent-posts-big {
     width: 100%;
   }
+  .recent-posts-container {
+    width: 60% !important;
+  }
+  .title {
+    margin-bottom: 2rem !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .recent-posts {
     width: 100%;
+  }
+  .recent-posts-container {
+    width: 80% !important;
   }
 }

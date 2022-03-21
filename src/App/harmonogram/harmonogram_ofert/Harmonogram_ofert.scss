@@ -213,7 +213,7 @@
 }
 
 .confirm-button-container {
-  width: 80%;
+  width: 60%;
   text-align: center;
   margin: auto;
   button {
@@ -232,34 +232,6 @@
   flex-direction: row;
   justify-content: space-between;
 }
-@media only screen and (max-width: 920px) {
-  .harmonogram-ofert-container {
-    width: 90%;
-  }
-  .harmonogram-ofert-title-container {
-    width: 80%;
-  }
-  .harmonogram-ofert-company-inputs-container {
-    width: 90%;
-    flex-direction: column;
-    margin: auto;
-  }
-  .input-container {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 610px) {
-  .harmonogram-ofert-title-container {
-    justify-content: center;
-    margin: auto;
-    width: 90%;
-    word-wrap: break-word;
-  }
-  .input-container {
-    width: 100%;
-  }
-}
 
 @media only screen and (max-width: 1480px) {
   .input-container-small {
@@ -270,6 +242,9 @@
   }
   .input-long {
     width: 100%;
+  }
+  .confirm-button-container {
+    width: 80%;
   }
 }
 
@@ -305,5 +280,33 @@
   }
   .harmonogram-ofert-container {
     margin-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .harmonogram-ofert-container {
+    width: 90%;
+  }
+  .harmonogram-ofert-title-container {
+    width: 80%;
+  }
+  .harmonogram-ofert-company-inputs-container {
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+  }
+  .input-container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .harmonogram-ofert-title-container {
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    word-wrap: break-word;
+  }
+  .input-container {
+    width: 100%;
   }
 }

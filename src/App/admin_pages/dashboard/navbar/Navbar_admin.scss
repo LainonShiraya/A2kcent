@@ -9,7 +9,7 @@
   justify-content: space-between;
   margin: auto;
   z-index: 100;
-  border-bottom: 2px solid $base-green;
+  width: 98%;
 }
 
 .subpages-container-admin {
@@ -148,6 +148,8 @@
   width: 100%;
   position: sticky;
   top: 0;
+  background-color: white;
+  border-bottom: 2px solid $base-green;
 }
 .navbar-mobile {
   button {

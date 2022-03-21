@@ -43,9 +43,7 @@ const Contact = () => {
             <p>Wiadomość (wymagane)</p>
             <textarea></textarea>
           </div>
-          <button className="button-send text-title-button-green">
-            Wyślij
-          </button>
+          <button className="button-send button-newsletter">Wyślij</button>
         </div>
       </div>
     </div>

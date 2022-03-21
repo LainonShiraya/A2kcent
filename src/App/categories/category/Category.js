@@ -1,5 +1,5 @@
 import "./Category.css";
-import Image from "../../../assets/images/roman nerd.png";
+// import Image from "../../../assets/images/roman nerd.png";
 function Category({
   title,
   setShowDetail,
@@ -19,15 +19,15 @@ function Category({
     link({ page });
   };
   return (
-    <div className="category-container">
-      <div className="category-image-container">
+    <div className="container">
+      {/* <div className="category-image-container">
         <img src={Image} alt="..." className="category-image" />
-      </div>
+      </div> */}
       <div className="category-text-container">
         <h3 className="text-category-title">{title}</h3>
-        <button className="button-category" onClick={clickShowDetail}>
+        {/* <button className="button-category" onClick={clickShowDetail}>
           Read More
-        </button>
+        </button> */}
       </div>
     </div>
   );

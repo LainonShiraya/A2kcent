@@ -1,8 +1,10 @@
 import "./Ofert.css";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 function Ofert({ id, title, type, date, price, place }) {
   return (
-    <div className="ofert-container" key={id}>
+    <div className="ofert-container  from-left" key={id}>
       <div className="ofert-description-container">
         <div className="restriction" data-text={title}>
           <div className="on-hover-text-container" data-text={title}>

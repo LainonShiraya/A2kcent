@@ -91,17 +91,16 @@
   flex-direction: column;
   gap: 2rem;
   margin-top: 4.2rem;
+  text-align: center;
 }
 .font-subtitle {
   font-size: 2rem;
 }
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 1020px) {
   .contact-message-container {
     width: 90%;
   }
-}
-
-@media screen and (max-width: 1020px) {
   .contact-message-split-container {
     display: flex;
     flex-direction: column;
@@ -110,9 +109,9 @@
     width: 100%;
     margin-top: 3rem;
   }
-  .contact-info-container {
-    text-align: center;
-  }
+  // .contact-info-container {
+  //   text-align: center;
+  // }
   .contact-container {
     margin-top: 6rem;
   }

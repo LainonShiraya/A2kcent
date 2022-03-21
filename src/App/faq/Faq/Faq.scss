@@ -3,7 +3,6 @@
   width: 100%;
   border: 1px solid $base-gray;
   box-shadow: 5px 5px 10px #b1a7a7;
-  cursor: pointer;
 }
 
 .faq-title {
@@ -13,6 +12,8 @@
   text-align: center;
   margin: 1rem;
   font-size: 1rem;
+  cursor: pointer;
+
   i {
     margin-bottom: auto;
     margin-top: auto;
@@ -20,12 +21,20 @@
   }
   h2 {
     font-size: 1.5rem !important;
+    text-align: left;
   }
 }
 
 .faq-text-container {
   margin: 1rem;
   text-align: left;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+}
+.faq-text-container-show {
+  max-height: 1000px;
+  transition: max-height 1s ease-in;
 }
 .faq-text-not-visible {
   display: none;

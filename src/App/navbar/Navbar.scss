@@ -9,7 +9,6 @@
   justify-content: space-between;
   margin: auto;
   z-index: 100;
-  border-bottom: 2px solid $base-green;
 }
 
 .subpages-container {
@@ -22,7 +21,7 @@
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 500 !important;
     margin: auto;
     &:hover {
       color: $base-green;
@@ -35,42 +34,36 @@
 }
 
 .navbar-button-contacts {
+  // background-color: $base-green;
   background-color: inherit;
+  color: $base-green;
   font-size: 1.2rem;
   font-weight: 500;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 0.3rem;
   position: relative;
-  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  // -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  // box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
-  overflow: hidden;
-  border: none;
+  // overflow: hidden;
   padding: 0.3rem 0.6rem 0.3rem 0.6rem;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background-color: $base-green;
-    border-radius: 15px;
-    z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    transition: all 250ms;
-  }
+  font-weight: 500;
+  // &:hover,
+  // &:active {
+  //   -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  //   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  // }
+  border: 2px solid $base-green;
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
+    -webkit-box-shadow: 10px 8px 19px -3px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 8px 19px -3px rgba(0, 0, 0, 0.4);
     color: white;
-  }
-  &:hover::before,
-  &:active::before {
-    width: 100%;
+    border: 2px solid $base-green;
+    background-color: $base-green;
   }
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -107,7 +100,10 @@
 
 .dropdown:hover .dropdown-content,
 .dropdown:focus .dropdown-content,
-.dropdown:active .dropdown-content {
+.dropdown:active .dropdown-content,
+.dropdown-navbar:hover .dropdown-content,
+.dropdown-navbar:focus .dropdown-content,
+.dropdown-navbar:active .dropdown-content {
   display: block;
 }
 
@@ -117,8 +113,14 @@
   margin: auto;
   text-decoration: none;
   color: black;
+}
+.dropdown-navbar {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  text-decoration: none;
+  color: black;
   font-size: 1.2rem;
-  font-weight: 500;
 }
 .overlay {
   height: 100%;
@@ -147,12 +149,12 @@
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 1.4rem;
   color: #818181;
   display: block;
   transition: 0.3s;
+  font-weight: 500;
 }
-
 .overlay a:hover,
 .overlay a:focus,
 .overlay a:active {
@@ -177,14 +179,12 @@
   position: sticky;
   top: 0;
   z-index: 50;
+  border-bottom: 2px solid $base-green;
+  background-color: #fff5f6;
 }
 .logo {
   max-width: 200px;
   max-height: 100px;
-}
-.active {
-  color: $base-green !important;
-  font-weight: 700 !important;
 }
 .bar1,
 .bar2,
@@ -233,7 +233,10 @@
   width: 100%;
   left: 0;
 }
-
+.active {
+  color: $base-green !important;
+  font-weight: 500 !important;
+}
 @media only screen and (max-width: 1020px) {
   .navbar-container {
     display: none;
@@ -263,12 +266,12 @@
 @media only screen and (max-width: 1280px) {
   .subpages-container {
     a {
-      font-size: 1rem;
+      font-size: 1.2rem !important;
       font-weight: 500;
     }
   }
   .navbar-button-contact {
-    font-size: 1rem;
+    font-size: 1.2rem !important;
     font-weight: 500;
   }
 }

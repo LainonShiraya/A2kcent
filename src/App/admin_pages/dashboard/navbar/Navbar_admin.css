@@ -9,7 +9,7 @@
   justify-content: space-between;
   margin: auto;
   z-index: 100;
-  border-bottom: 2px solid #2f512a;
+  width: 98%;
 }
 
 .subpages-container-admin {
@@ -153,6 +153,8 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  background-color: white;
+  border-bottom: 2px solid #2f512a;
 }
 
 .navbar-mobile button {
@@ -284,4 +286,4 @@
   .dropdown {
     font-size: 20px;
   }
-}/*# sourceMappingURL=Navbar.css.map */
+}/*# sourceMappingURL=Navbar_admin.css.map */

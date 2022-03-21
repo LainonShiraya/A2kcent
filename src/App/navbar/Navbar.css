@@ -9,7 +9,6 @@
   justify-content: space-between;
   margin: auto;
   z-index: 100;
-  border-bottom: 2px solid #2f512a;
 }
 
 .subpages-container {
@@ -23,7 +22,7 @@
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 500 !important;
   margin: auto;
 }
 .subpages-container a:hover {
@@ -37,35 +36,22 @@
 
 .navbar-button-contacts {
   background-color: inherit;
+  color: #2f512a;
   font-size: 1.2rem;
   font-weight: 500;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 0.3rem;
   position: relative;
-  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
-  overflow: hidden;
-  border: none;
   padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  font-weight: 500;
+  border: 2px solid #2f512a;
 }
-.navbar-button-contacts::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  background-color: #2f512a;
-  border-radius: 15px;
-  z-index: -1;
-  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  transition: all 250ms;
-}
-.navbar-button-contacts:hover, .navbar-button-contacts:active {
+.navbar-button-contacts:hover, .navbar-button-contacts:active, .navbar-button-contacts:focus {
+  box-shadow: 10px 8px 19px -3px rgba(0, 0, 0, 0.4);
   color: white;
-}
-.navbar-button-contacts:hover::before, .navbar-button-contacts:active::before {
-  width: 100%;
+  border: 2px solid #2f512a;
+  background-color: #2f512a;
 }
 
 .dropdown-content {
@@ -104,7 +90,10 @@
 
 .dropdown:hover .dropdown-content,
 .dropdown:focus .dropdown-content,
-.dropdown:active .dropdown-content {
+.dropdown:active .dropdown-content,
+.dropdown-navbar:hover .dropdown-content,
+.dropdown-navbar:focus .dropdown-content,
+.dropdown-navbar:active .dropdown-content {
   display: block;
 }
 
@@ -114,8 +103,15 @@
   margin: auto;
   text-decoration: none;
   color: black;
+}
+
+.dropdown-navbar {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  text-decoration: none;
+  color: black;
   font-size: 1.2rem;
-  font-weight: 500;
 }
 
 .overlay {
@@ -145,10 +141,11 @@
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 1.4rem;
   color: #818181;
   display: block;
   transition: 0.3s;
+  font-weight: 500;
 }
 
 .overlay a:hover,
@@ -177,16 +174,13 @@
   position: sticky;
   top: 0;
   z-index: 50;
+  border-bottom: 2px solid #2f512a;
+  background-color: #fff5f6;
 }
 
 .logo {
   max-width: 200px;
   max-height: 100px;
-}
-
-.active {
-  color: #2f512a !important;
-  font-weight: 700 !important;
 }
 
 .bar1,
@@ -240,6 +234,11 @@
   left: 0;
 }
 
+.active {
+  color: #2f512a !important;
+  font-weight: 500 !important;
+}
+
 @media only screen and (max-width: 1020px) {
   .navbar-container {
     display: none;
@@ -274,12 +273,12 @@
 }
 @media only screen and (max-width: 1280px) {
   .subpages-container a {
-    font-size: 1rem;
+    font-size: 1.2rem !important;
     font-weight: 500;
   }
 
   .navbar-button-contact {
-    font-size: 1rem;
+    font-size: 1.2rem !important;
     font-weight: 500;
   }
 }

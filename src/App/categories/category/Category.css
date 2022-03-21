@@ -2,14 +2,22 @@
   display: flex;
   flex-direction: row;
   background-color: #2f512a;
-  box-shadow: 10px 10px 10px #887e7e;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
   border-radius: 25px;
   justify-content: space-evenly;
   text-align: center;
   width: 40%;
-  height: 20vh;
-  min-height: 200px;
-  min-width: 300px;
+  min-height: 150px;
+  transition: all 250ms;
+  padding: 0.5rem;
+}
+.category-container:hover, .category-container:active {
+  color: #2f512a;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transform: scale(1.1);
+}
+.category-container:active {
+  transform: translateY(-2px);
 }
 
 .category-image {
@@ -24,22 +32,12 @@
 
 .category-text-container {
   text-align: center;
-  margin: auto 0.5rem auto 0.5rem;
-  width: 60%;
+  margin: auto;
 }
 
-@media only screen and (max-width: 1216px) {
+@media only screen and (max-width: 900px) {
   .category-container {
-    width: 80%;
-    margin: auto;
-  }
-
-  .category-image-container {
-    width: 40%;
-  }
-
-  .category-container {
-    height: 25vh;
+    width: 60%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -49,15 +47,10 @@
   }
 
   .category-container {
-    height: 20vh;
+    width: 100%;
   }
 
   .category-text-container {
     width: 100%;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .category-container {
-    width: 90%;
   }
 }/*# sourceMappingURL=Category.css.map */

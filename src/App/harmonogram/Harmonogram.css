@@ -1,6 +1,11 @@
 .harmonogram-upper-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/images/pexels-fauxels-3184317.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/images/teach.jpeg);
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
   background-size: cover;
+  /* Resize the background image to cover the entire container */
   height: 60vh;
   min-height: 600px;
   display: flex;
@@ -28,6 +33,16 @@
   padding: 1rem;
   border-radius: 25px;
   font-size: 1.5rem;
+  background-color: inherit;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: white;
+}
+.harmonogram-search-container input:active {
+  border: 2px solid white;
+}
+.harmonogram-search-container input:focus {
+  outline: none !important;
+  border: 2px solid white;
 }
 
 .shadow {
@@ -100,7 +115,7 @@
   margin: 2rem;
 }
 
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 1210px) {
   .harmonogram-title-container {
     width: 60%;
     margin-left: 2rem;
@@ -114,8 +129,35 @@
   .harmonogram-upper-container {
     min-height: 400px;
   }
+
+  .harmonogram-search-container {
+    margin-left: 2rem;
+  }
 }
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 1040px) {
+  .harmonogram-search-container input {
+    width: 80%;
+  }
+
+  .text-title-text {
+    font-size: 4rem !important;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .harmonogram-search-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .harmonogram-search-container input {
+    margin: auto;
+  }
+
+  .harmonogram-title-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
   .harmonogram-sorts-container {
     flex-direction: column;
   }
@@ -148,26 +190,39 @@
     width: 80%;
   }
 }
+@media only screen and (max-width: 680px) {
+  .text-title-text {
+    font-size: 3rem !important;
+  }
+}
 @media only screen and (max-width: 430px) {
   .harmonogram-upper-container {
     min-height: auto;
-    gap: 1rem;
+    gap: 0rem;
   }
 
   .harmonogram-title-container {
-    width: 80%;
-    margin-left: 2rem;
+    width: 90%;
+  }
+
+  .text-title-text {
+    font-size: 2.5rem !important;
   }
 
   .harmonogram-search-container {
-    margin-left: 2rem;
-    width: 80%;
+    width: 90%;
   }
-  .harmonogram-search-container input {
-    width: 80%;
-  }
-
   .harmonogram-search-container input {
     width: 100%;
+  }
+
+  .harmonogram-upper-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/images/teach.jpeg);
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
   }
 }/*# sourceMappingURL=Harmonogram.css.map */

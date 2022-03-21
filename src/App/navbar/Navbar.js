@@ -64,7 +64,7 @@ function Navbar() {
             O nas
           </NavLink>
           {/* <Link to="Aktualności">Aktualności</Link> */}
-          <div class="dropdown">
+          <div class="dropdown-navbar">
             Oferta <i class="fas fa-angle-down"></i>
             <div class="dropdown-content">
               <Link to="Dla_Studentów">Dla Studentów</Link>

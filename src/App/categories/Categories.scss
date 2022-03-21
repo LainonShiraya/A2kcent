@@ -1,19 +1,40 @@
+@import "../generalStyles/colors/colors.scss";
 .categories-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
 .categories-text {
-  margin-bottom: 6rem;
-  margin-top: 6rem;
+  margin: auto;
+  margin-bottom: 4rem;
+  margin-top: 8rem;
+  width: 40%;
+  text-align: center;
 }
-
+.view-image-categories {
+  height: 800px;
+}
+.view-image-container-categories {
+  width: 40%;
+}
+.categories-display-category-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  gap: 4rem;
+  justify-content: flex-start;
+  margin: auto;
+}
 .categories-display-container {
   margin: auto;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 6rem;
+  text-align: center;
+}
+.view-image-container-categories {
+  margin-left: 0;
 }
 .categories-category-detail {
   display: none; /* Hidden by default */
@@ -100,15 +121,38 @@
     z-index: 100;
   }
 }
+@media only screen and (max-width: 1620px) {
+  .view-image-categories {
+    height: 600px;
+  }
+  .categories-container {
+    width: 90%;
+  }
+}
+
 @media only screen and (max-width: 1216px) {
+  .view-image-container-categories {
+    display: none;
+  }
+  .view-image-categories {
+    display: none;
+  }
+  .categories-display-category-container {
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 980px) {
   .categories-display-container {
     flex-direction: column;
     gap: 4rem;
   }
-  .categoried-category-detail-button {
-    button {
-      width: 30%;
-    }
+  .view-image-categories {
+    height: 500px;
+  }
+  .view-image-container-categories {
+    width: 90%;
   }
 }
 
@@ -138,5 +182,8 @@
     button {
       width: 40%;
     }
+  }
+  .categories-text {
+    width: 80%;
   }
 }

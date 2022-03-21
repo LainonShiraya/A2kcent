@@ -136,7 +136,7 @@ function MainPage() {
         <h2 className="text-color-green">{price * promocja} PLN</h2>
       </div>
       <div className="confirm-button-container">
-        <button className="text-title-button-green">Potwierdz</button>
+        <button className="button-send button-newsletter">Potwierdz</button>
       </div>
     </div>
   );

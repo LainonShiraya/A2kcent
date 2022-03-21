@@ -29,7 +29,7 @@ import EditTraining from "../admin_pages/dashboard/edit_news/edit_news";
 import NavbarAdmin from "../admin_pages/dashboard/navbar/Navbar";
 
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   useLocation,
@@ -37,7 +37,7 @@ import {
 import { useEffect } from "react";
 function MainPage() {
   return (
-    <Router basename="/A2kcent">
+    <Router>
       <ScrollToTop>
         <div className="body-container">
           <Routes>

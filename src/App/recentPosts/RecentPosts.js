@@ -2,6 +2,7 @@ import "./RecentPosts.css";
 import PostSmall from "../recentPosts/postSmall/PostSmall";
 import PostBig from "../recentPosts/postBig/PostBig";
 import CardPost from "../recentPosts/CardPost/CardPost";
+import Pulse from "react-reveal/Pulse";
 
 function RecentPosts() {
   return (
@@ -10,7 +11,6 @@ function RecentPosts() {
         <div className="title">
           <h2 className="text-posts-title-text">Aktualności</h2>
         </div>
-        <hr className="line-green" />
         <div className="recent-posts">
           {/* <div className="recent-posts-big"> */}
           <CardPost />

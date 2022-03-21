@@ -1,0 +1,175 @@
+.aboutUsNew-container {
+  width: 100%;
+}
+
+.aboutUsNew-header-container {
+  padding-top: 6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-height: 500px;
+  max-height: 1020px;
+  border-radius: 0 0 60% 0/60%;
+  background-color: #2f512a;
+}
+
+.aboutUsNew-header-text-container {
+  width: 60%;
+}
+
+.aboutUsNew-header-image-container {
+  width: 40%;
+}
+
+.aboutUsNew-header-image {
+  margin: auto;
+  margin-top: 4rem;
+  width: 60%;
+  min-height: 450px;
+  background-image: url(../../../assets/images/training.jpeg);
+  background-position: center;
+  /* Center the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  border-radius: 10%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.aboutUsNew-header-text {
+  margin: auto;
+  text-align: left;
+  width: 60%;
+  color: white;
+}
+.aboutUsNew-header-text span {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.aboutUsNew-header-text-title {
+  font-weight: 700;
+  font-size: 4rem;
+  letter-spacing: 1.2px;
+  color: white;
+}
+
+.aboutUsNew-header-text-subtitle {
+  letter-spacing: 1.2px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.aboutUsNew-statistics-text-container {
+  width: 50%;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.aboutUsNew-statistics-container {
+  width: 60%;
+  float: right;
+  display: grid;
+  grid-template-columns: repeat(2, calc(40% - 15px));
+  grid-gap: 25px;
+  margin-bottom: 10rem;
+  justify-content: end;
+}
+
+.aboutUsNew-statistics-detail {
+  width: 80%;
+  margin: auto;
+  margin-top: 6rem;
+}
+
+.aboutUsNew-statistic {
+  background-color: #2f512a;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  letter-spacing: 1.2px;
+  border-radius: 15px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+.aboutUsNew-statistic i {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.aboutUsNew-statistic h1 {
+  font-weight: 700;
+}
+.aboutUsNew-statistic h3 {
+  font-weight: 700;
+}
+
+.aboutUsNew-lecturers-container {
+  width: 65%;
+  margin: auto;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aboutUsNew-lecturers-image-container {
+  max-height: 600px;
+}
+
+.aboutUsNew-lecturer-image {
+  margin: auto;
+  height: 600px;
+  border-radius: 10%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.aboutUsNew-lecturers-text-container {
+  width: 50%;
+  margin-top: 4rem;
+  text-align: center;
+}
+.aboutUsNew-lecturers-text-container h1 {
+  margin-bottom: 2rem;
+}
+
+.aboutUsNew-companies-container {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aboutUsNew-companies-text-container {
+  width: 50%;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+.aboutUsNew-companies-text-container h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-top: 1rem;
+}
+.aboutUsNew-companies-text-container h2 {
+  font-size: 1.5rem;
+}
+
+.aboutUsNew-companies-images-container {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 6rem;
+  margin-top: 8rem;
+  float: right;
+  margin-bottom: 4rem;
+}/*# sourceMappingURL=about_us_new.css.map */

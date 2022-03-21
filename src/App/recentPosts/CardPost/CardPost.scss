@@ -9,6 +9,12 @@ body {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   flex: 1;
+  transition: 250ms;
+  &:hover,
+  &:active,
+  &:focus {
+    transform: scale(1.1);
+  }
 }
 .card-header {
   padding: 0 !important;
@@ -54,7 +60,7 @@ body {
 
 .card-body p {
   font-size: 13px;
-  margin: 0 0 40px;
+  margin: auto;
 }
 
 @media only screen and (max-width: 600px) {
