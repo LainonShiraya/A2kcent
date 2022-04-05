@@ -54,18 +54,26 @@ const About_us_new = () => {
             <i class="fas fa-chalkboard-teacher fa-4x"></i>
             <h3>Szkoleń</h3>
             <h1>
-              <VisibilitySensor partialVisibility offset={{ bottom: 50 }}>
-                <CountUp start={0} end={7300} duration={3} />
-              </VisibilitySensor>
+              <TrackVisibility once>
+                {({ isVisible }) =>
+                  isVisible ? (
+                    <CountUp start={0} end={7300} duration={3} />
+                  ) : (
+                    7300
+                  )
+                }
+              </TrackVisibility>
             </h1>
           </div>
           <div className="aboutUsNew-statistic">
             <i class="fas fa-users fa-4x"></i>
             <h3>Konsultacji</h3>
             <h1>
-              <VisibilitySensor partialVisibility offset={{ bottom: 50 }}>
-                <CountUp start={0} end={500} duration={3} />
-              </VisibilitySensor>
+              <TrackVisibility once>
+                {({ isVisible }) =>
+                  isVisible ? <CountUp start={0} end={500} duration={3} /> : 500
+                }
+              </TrackVisibility>
             </h1>
           </div>
           <div className="aboutUsNew-statistic">
@@ -74,7 +82,11 @@ const About_us_new = () => {
             <h1>
               <TrackVisibility once>
                 {({ isVisible }) =>
-                  isVisible ? <CountUp start={0} end={3200} duration={3} /> : 0
+                  isVisible ? (
+                    <CountUp start={0} end={3200} duration={3} />
+                  ) : (
+                    3200
+                  )
                 }
               </TrackVisibility>
             </h1>
@@ -85,7 +97,11 @@ const About_us_new = () => {
             <h1>
               <TrackVisibility once>
                 {({ isVisible }) =>
-                  isVisible ? <CountUp start={0} end={1500} duration={3} /> : 0
+                  isVisible ? (
+                    <CountUp start={0} end={1500} duration={3} />
+                  ) : (
+                    1500
+                  )
                 }
               </TrackVisibility>
             </h1>
@@ -115,7 +131,7 @@ const About_us_new = () => {
           </span>
         </div>
       </div>
-      <div className="aboutUsNew-lecturers-container">
+      <div className="aboutUsNew-lecturers-container flex-reverse">
         <div className="aboutUsNew-lecturers-text-container">
           {" "}
           <h1 className="text-posts-title-text">John Doe</h1>{" "}

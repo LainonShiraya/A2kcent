@@ -1,0 +1,22 @@
+.admin-posts {
+  flex-wrap: wrap;
+}
+
+.card-admin {
+  min-width: 30% !important;
+}
+
+.admin-buttons {
+  display: flex;
+  margin: auto;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.admin-button-margin {
+  margin-bottom: 2.5rem !important;
+}
+
+.delete-colors {
+  background: red !important;
+}/*# sourceMappingURL=RecentPostsAdmin.css.map */

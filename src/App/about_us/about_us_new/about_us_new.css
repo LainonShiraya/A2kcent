@@ -14,19 +14,19 @@
 }
 
 .aboutUsNew-header-text-container {
-  width: 60%;
+  width: 50%;
+  margin-top: 2rem;
 }
 
 .aboutUsNew-header-image-container {
-  width: 40%;
+  width: 50%;
 }
 
 .aboutUsNew-header-image {
   margin: auto;
-  margin-top: 4rem;
   width: 60%;
-  min-height: 450px;
-  background-image: url(../../../assets/images/training.jpeg);
+  min-height: 500px;
+  background-image: url(../../../assets/images/about_us_image.jpg);
   background-position: center;
   /* Center the image */
   background-size: cover;
@@ -38,8 +38,9 @@
 .aboutUsNew-header-text {
   margin: auto;
   text-align: left;
-  width: 60%;
+  width: 70%;
   color: white;
+  margin-bottom: 2rem;
 }
 .aboutUsNew-header-text span {
   font-size: 1.3rem;
@@ -172,4 +173,196 @@
   margin-top: 8rem;
   float: right;
   margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 1440px) {
+  .aboutUsNew-header-image {
+    width: 80%;
+  }
+
+  .aboutUsNew-lecturers-container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  .aboutUsNew-header-image-container {
+    margin: auto;
+  }
+
+  .aboutUsNew-header-image {
+    width: 90%;
+  }
+
+  .aboutUsNew-header-text {
+    width: 90%;
+  }
+
+  .aboutUsNew-statistics-text-container {
+    width: 80%;
+  }
+
+  .aboutUsNew-statistics-container {
+    float: none;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    grid-template-columns: repeat(4, 30%);
+    grid-gap: 25px;
+  }
+
+  .aboutUsNew-lecturer-image {
+    max-height: 600px;
+  }
+
+  .aboutUsNew-companies-container {
+    width: 90%;
+  }
+
+  .aboutUsNew-companies-images-container {
+    width: 80%;
+    justify-content: flex-end;
+    gap: 4rem;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .aboutUsNew-header-container {
+    border-radius: 0;
+    flex-direction: column;
+  }
+
+  .aboutUsNew-header-text-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .aboutUsNew-header-text {
+    text-align: center;
+  }
+
+  .aboutUsNew-header-image-container {
+    width: 100%;
+    background: linear-gradient(180deg, #2f512a 50%, white 50%);
+  }
+
+  .aboutUsNew-header-image {
+    width: 80%;
+    min-height: 350px;
+    border-radius: 15px;
+  }
+
+  .aboutUsNew-statistics-text-container {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4rem;
+  }
+
+  .aboutUsNew-statistics-container {
+    width: 80%;
+    grid-template-columns: repeat(2, 60%);
+  }
+
+  .aboutUsNew-lecturers-container {
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-top: 8rem;
+  }
+
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .aboutUsNew-lecturers-image-container {
+    margin: auto;
+  }
+
+  .aboutUsNew-lecturer-image {
+    max-height: 500px;
+    margin: auto;
+  }
+
+  .aboutUsNew-lecturers-text-container {
+    margin: auto;
+    width: 80%;
+  }
+
+  .aboutUsNew-lecturers-text-container h1 {
+    margin-top: 2rem;
+  }
+
+  .aboutUsNew-companies-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8rem;
+  }
+
+  .aboutUsNew-companies-text-container {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+  }
+
+  .aboutUsNew-companies-images-container {
+    margin-top: 4rem;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .aboutUsNew-statistics-container {
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  .aboutUsNew-header-container {
+    max-height: 100%;
+  }
+
+  .aboutUsNew-header-image {
+    width: 90%;
+  }
+
+  .aboutUsNew-header-text-container {
+    width: 90%;
+  }
+
+  .aboutUsNew-statistics-text-container {
+    width: 90%;
+  }
+
+  .aboutUsNew-statistics-container {
+    width: 90%;
+  }
+
+  .aboutUsNew-statistics-detail {
+    width: 100%;
+  }
+
+  .aboutUsNew-header-text-container {
+    width: 100%;
+  }
+
+  .aboutUsNew-lecturer-image {
+    max-height: 400px;
+  }
+
+  .aboutUsNew-lecturers-container {
+    width: 90%;
+  }
+
+  .aboutUsNew-lecturers-text-container {
+    width: 90%;
+  }
+
+  .aboutUsNew-companies-text-container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .aboutUsNew-companies-images-container {
+    flex-direction: column;
+    width: 50%;
+  }
 }/*# sourceMappingURL=about_us_new.css.map */

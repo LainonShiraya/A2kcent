@@ -21,7 +21,9 @@ function PostSmall({ title, info, date }) {
       </div>
       <div className="posts-small-button-container">
         <Link to={`edit/${key}`}>
-          <button className="button-post-small">Edytuj</button>
+          <button className="button-post-small admin-button-margin">
+            Edytuj
+          </button>
         </Link>
         <button className="button-post-small">Usuń</button>
       </div>

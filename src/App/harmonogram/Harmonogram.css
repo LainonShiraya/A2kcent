@@ -1,5 +1,5 @@
 .harmonogram-upper-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/images/teach.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/images/about_us_image.jpg);
   background-position: center;
   /* Center the image */
   background-repeat: no-repeat;
@@ -217,7 +217,6 @@
   }
 
   .harmonogram-upper-container {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/images/teach.jpeg);
     background-position: center;
     /* Center the image */
     background-repeat: no-repeat;

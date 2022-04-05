@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import CategoryA from "../categories/category/Category";
 import CategoryB from "../categories/category/CategoryB";
 import { Link } from "react-router-dom";
-import Hero from "../../assets/images/hero_real2.png";
+import Hero from "../../assets/images/thirdwoman.png";
 import "./Categories.css";
 function Categories() {
   const [showDetail, setShowDetail] = useState(false);

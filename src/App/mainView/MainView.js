@@ -1,6 +1,6 @@
 import "./MainView.css";
 import { Link } from "react-router-dom";
-import Hero from "../../assets/images/hero_real.png";
+import Hero from "../../assets/images/frontpagewoman.png";
 function MainView() {
   return (
     <div className="view-container">

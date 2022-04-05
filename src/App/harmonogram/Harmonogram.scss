@@ -1,6 +1,6 @@
 .harmonogram-upper-container {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets/images/teach.jpeg);
+    url(../../assets/images/about_us_image.jpg); //url(../../assets/images/background_test.jpeg);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -210,8 +210,6 @@
     }
   }
   .harmonogram-upper-container {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(../../assets/images/teach.jpeg);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
