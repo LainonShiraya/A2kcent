@@ -27,6 +27,7 @@ import Dashboard from "../admin_pages/dashboard/dashboard";
 import AddTraining from "../admin_pages/dashboard/add_news/add_news";
 import EditTraining from "../admin_pages/dashboard/edit_news/edit_news";
 import NavbarAdmin from "../admin_pages/dashboard/navbar/Navbar";
+import HarmonogramAdmin from "../admin_pages/dashboard/courses/harmonogram/Harmonogram_admin";
 
 import {
   BrowserRouter as Router,
@@ -189,6 +190,7 @@ function MainPage() {
               element={
                 <>
                   <NavbarAdmin />
+                  <HarmonogramAdmin />
                 </>
               }
             />

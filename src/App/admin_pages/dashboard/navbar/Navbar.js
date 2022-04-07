@@ -61,7 +61,7 @@ function Navbar() {
           >
             Szkolenia
           </NavLink>
-          <Link to="../dashboard">
+          <Link to="../admin">
             <button className="navbar-button-contacts">Wyloguj</button>
           </Link>
         </div>

@@ -19,11 +19,11 @@ const Add_news = () => {
             <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" />
           </div>
         </div>
-        <div className="textarea-container">
+        <div className="textarea-container-admin">
           <p>Tekst/Opis (wymagane)</p>
           <textarea></textarea>
         </div>
-        <button className="button-send text-title-button-green">Wyślij</button>
+        <button className="button-newsletter admin-button-margin">Dodaj</button>
       </div>
     </div>
   );
