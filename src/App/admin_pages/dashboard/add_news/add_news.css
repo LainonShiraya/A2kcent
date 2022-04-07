@@ -4,6 +4,7 @@
   justify-content: space-evenly;
   margin: auto;
   text-align: center;
+  z-index: 1;
 }
 .input-type-radio-container label {
   margin: auto;
@@ -12,14 +13,18 @@
   margin: auto;
 }
 
-.contact-message-container-admin {
-  width: 40%;
-  margin: auto;
-  margin-top: auto;
-  margin-top: 4rem;
-  text-align: center;
+.addNews-container {
+  margin-top: 2rem;
 }
-.contact-message-container-admin input {
+
+.input-title-container {
+  display: flex;
+  flex-direction: column;
+}
+.input-title-container p {
+  color: #707070;
+}
+.input-title-container input {
   margin: auto;
   margin-bottom: auto;
   min-height: 30px;
@@ -27,11 +32,18 @@
   text-align: center;
   font-weight: 500;
   font-size: 1.5rem;
-  width: 100%;
+  width: min(80vw, 400px);
+}
+
+.contact-message-container-admin {
+  width: 80%;
+  margin: auto;
+  margin-top: auto;
+  margin-top: 4rem;
+  text-align: center;
 }
 
 .contact-select-container {
-  width: 80%;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -41,6 +53,21 @@
   cursor: pointer;
   border-radius: 5px;
   list-style: none;
-  width: 40%;
+  width: min(80vw, 400px);
   text-align: center;
+}
+
+.image-container-news {
+  margin: auto;
+  margin-top: 2rem;
+}
+.image-container-news img {
+  width: 40vw;
+  height: 40vh;
+  min-height: 350px;
+  min-width: 350px;
+}
+
+.textarea-container textarea {
+  width: min(80vw, 800px);
 }/*# sourceMappingURL=add_news.css.map */

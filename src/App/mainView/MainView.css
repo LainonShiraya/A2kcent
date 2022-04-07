@@ -1,6 +1,6 @@
 .view-container {
-  background: #323e2d;
-  background: linear-gradient(140deg, #323e2d 0%, #2f512a 62%, #6d9168 100%);
+  background: rgb(50, 62, 45);
+  background: linear-gradient(140deg, rgb(50, 62, 45) 0%, rgb(47, 81, 42) 62%, rgb(109, 145, 104) 100%);
   min-height: 600px;
 }
 

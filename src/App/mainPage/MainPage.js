@@ -184,6 +184,14 @@ function MainPage() {
                 </>
               }
             />
+            <Route
+              path="/admin/dashboard/courses"
+              element={
+                <>
+                  <NavbarAdmin />
+                </>
+              }
+            />
           </Routes>
         </div>
       </ScrollToTop>

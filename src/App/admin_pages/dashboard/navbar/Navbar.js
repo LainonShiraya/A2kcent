@@ -12,17 +12,25 @@ function Navbar() {
   return (
     <div className="navbar-general-container">
       <div className="navbar-mobile">
-        <button onClick={openNav}>
-          <i class="fas fa-bars"></i>
-        </button>
+        <div className="navbar-button-hamburger-container">
+          <Link to="/">
+            <img alt="logo" src={Image} className="logo"></img>
+          </Link>
+          <button onClick={openNav}>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </button>
+        </div>
         <div id="myNav" class="overlay">
           <a href="#test" class="closebtn" onClick={closeNav}>
             &times;
           </a>
           <div class="overlay-content">
-            <Link to="/">Aktualności</Link>
-            <Link to="O_nas">Szkolenia</Link>
-            <Link to="../Promocje">Maile</Link>
+            <Link to="/">Strona główna</Link>
+            <Link to="../admin/dashboard">Aktualności</Link>
+            <Link to="../admin/dashboard/courses">Szkolenia</Link>
+            <Link to="../admin">Wyloguj</Link>
           </div>
         </div>
       </div>
@@ -32,28 +40,30 @@ function Navbar() {
             <img alt="logo" src={Image} className="logo"></img>
           </Link>
         </div>
-        <div className="subpages-container-admin">
+        <div className="subpages-container">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+          >
+            Strona główna
+          </NavLink>
           <NavLink
             to="../admin/dashboard"
             className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
             Aktualności
           </NavLink>
+          {/* <Link to="Promocje">Promocje</Link> */}
+          {/* <Link to="Harmonogram">Harmonogram</Link> */}
           <NavLink
-            to="../admin/szkolenia"
+            to="../admin/dashboard/courses"
             className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
             Szkolenia
           </NavLink>
-          <NavLink
-            to="../admin/maile"
-            className={({ isActive }) => (isActive ? "active" : "inactive")}
-          >
-            Maile
-          </NavLink>
-          {/* <Link to="Aktualności">Aktualności</Link> */}
-          {/* <Link to="Promocje">Promocje</Link> */}
-          {/* <Link to="Harmonogram">Harmonogram</Link> */}
+          <Link to="../dashboard">
+            <button className="navbar-button-contacts">Wyloguj</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+const Id = "1";
 const CardPost = () => {
   return (
     <div class="card card-admin">
@@ -26,7 +28,9 @@ const CardPost = () => {
             <span class="circle" aria-hidden="true">
               <span class="icon arrow"></span>
             </span>
-            <span class="button-text">Edytuj</span>
+            <Link to={`edit/${Id}`}>
+              <span class="button-text">Edytuj</span>
+            </Link>
           </button>
           <button class="learn-more button-arrow-animation admin-buttons">
             <span class="circle delete-colors" aria-hidden="true">

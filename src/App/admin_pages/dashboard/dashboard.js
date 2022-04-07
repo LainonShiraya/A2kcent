@@ -1,5 +1,6 @@
 import React from "react";
 import RecentPostsAdmin from "../dashboard/recentPostsAdmin/RecentPosts";
+import "../dashboard/dashboard.css";
 const Dashboard = () => {
   return (
     <div className="dashboard-container">

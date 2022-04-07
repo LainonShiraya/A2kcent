@@ -1,6 +1,6 @@
 @import "../generalStyles/colors/colors.scss";
 .categories-container {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
@@ -21,9 +21,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 60%;
   gap: 4rem;
-  justify-content: flex-start;
+  justify-content: center;
   margin: auto;
 }
 .categories-display-container {
@@ -129,7 +128,22 @@
     width: 90%;
   }
 }
-
+@media only screen and (max-width: 1440px) {
+  .categories-container {
+    width: 90%;
+  }
+  .categories-display-category-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1360px) {
+  .categories-display-category-container {
+    flex-direction: column;
+    gap: 4rem;
+    margin: auto;
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 1216px) {
   .view-image-container-categories {
     display: none;
@@ -144,10 +158,6 @@
   }
 }
 @media only screen and (max-width: 980px) {
-  .categories-display-container {
-    flex-direction: column;
-    gap: 4rem;
-  }
   .view-image-categories {
     height: 500px;
   }

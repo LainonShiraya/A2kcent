@@ -20,28 +20,6 @@ function Categories() {
   }, []);
   return (
     <div className="categories-container">
-      <div className="categories-category-detail" ref={myContainer}>
-        <div className="categories-category-detail-info">
-          <div className="categories-category-detail-title">
-            <div className="categories-category-detail-title-container">
-              <h2>{showDetailTitle}</h2>
-              <div className="categories-category-detail-exit-button">
-                <button onClick={closeDetail}>
-                  <i class="fas fa-times"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="categories-category-detail-text">
-            <h6>{showDetailText}</h6>
-          </div>
-          <div className="categoried-category-detail-button">
-            <Link to={{ pathname: link.page }}>
-              <button>Więcej </button>
-            </Link>
-          </div>
-        </div>
-      </div>
       <div className="categories-text">
         <h3 className="text-quote-text">
           <span className="text-color-green"> Nasza oferta </span>
@@ -52,30 +30,7 @@ function Categories() {
         </span>
       </div>
       <div className="categories-display-container">
-        <div className="view-image-container-categories">
-          <img src={Hero} alt="hero" className="view-image-categories" />
-        </div>
         <div className="categories-display-category-container">
-          <Link to="../students" className="category-container">
-            <CategoryA
-              title="Dla Studentów "
-              showDetail={showDetail}
-              setShowDetail={setShowDetail}
-              setShowDetailText={setShowDetailText}
-              setShowDetailTitle={setShowDetailTitle}
-              textDescription="Join 230+ tech leaders who have built software with us. Engage a
-          cross-functional team or dedicated experts.
-          Join 230+ tech leaders who have built software with us. Engage a
-          cross-functional team or dedicated experts.
-          Join 230+ tech leaders who have built software with us. Engage a
-          cross-functional team or dedicated experts.
-          Join 230+ tech leaders who have built software with us. Engage a
-          cross-functional team or dedicated experts."
-              test={test}
-              link={setLink}
-              page="students"
-            />
-          </Link>
           <Link to="../companies" className="category-containerB">
             <CategoryB
               title="Dla Laboratoriów"
@@ -83,25 +38,22 @@ function Categories() {
               setShowDetail={setShowDetail}
               setShowDetailText={setShowDetailText}
               setShowDetailTitle={setShowDetailTitle}
-              textDescription="Wymagania akredytacyjne wymagają od Ciebie doskonalenia kompetencji? Chcesz być na bieżąco z nowinkami technicznymi wkraczającymi
-           do Twojego laboratorium? Masz nowych i młodych pracowników i chcesz ich przeszkolić? Skorzystaj z naszej oferty.
-            Nasz doświadczony zespół pomoże pracownikom laboratoriów badawczych doskonalić swoje kompetencje."
+              textDescription=" W naszej ofercie znajdziecie Państwo szkolenia „szyte na miarę”, oznacza 
+              to opracowanie programu szkolenia w oparciu o Państwa indywidualne wytyczne. "
               test={test}
               link={setLink}
               page="laboratory"
             />
           </Link>
-          <Link to="../companies" className="category-container">
-            <CategoryA
+          <Link to="../companies" className="category-containerB">
+            <CategoryB
               title="Dla Firm"
               showDetail={showDetail}
               setShowDetail={setShowDetail}
               setShowDetailText={setShowDetailText}
               setShowDetailTitle={setShowDetailTitle}
-              textDescription="Masz problem do rozwiązania? Chcesz ulepszyć instrukcje i procedury, stworzyć nowe materiały i narzędzia,
-           lepsze środowisko pracy albo konkretny program szkoleniowy? -  skontaktuj się z nami, a zaczniemy pracować razem, aby osiągnąć Twój cel. 
-          Wszystkie aspekty szkoleń, konsultacji czy wizji lokalnych są ustalane indywidualnie z każdym Klientem. Dla Kadry Zarządzającej oraz pracowników Firm,
-           Instytutów czy Zakładów Przemysłowych
+              textDescription="W naszej ofercie znajdziecie Państwo szkolenia „szyte na miarę”, oznacza 
+              to opracowanie programu szkolenia w oparciu o Państwa indywidualne wytyczne. 
           "
               test={test}
               link={setLink}
@@ -115,10 +67,8 @@ function Categories() {
               setShowDetail={setShowDetail}
               setShowDetailText={setShowDetailText}
               setShowDetailTitle={setShowDetailTitle}
-              textDescription="Masz problem w gospodarowaniu odpadami? Nie wiesz czy Twoje środowisko pracy jest bezpieczne?
-           A może chcesz udoskonalić techniki badawcze?  Skontaktuj się z nami. Nasi eksperci rozwiążą wszystkie Twoje problemy.
-          Szczegółowy zakres szkoleń, konsultacji czy wizji lokalnych jest ustalany indywidualnie z każdym Klientem.
-           Dla Kadry Zarządzającej oraz pracowników Firm, Instytutów czy Zakładów Przemysłowych 
+              textDescription="W naszej ofercie znajdziecie Państwo szkolenia „szyte na miarę”, oznacza 
+              to opracowanie programu szkolenia w oparciu o Państwa indywidualne wytyczne. 
           "
               test={test}
               link={setLink}
@@ -133,10 +83,7 @@ function Categories() {
               setShowDetailText={setShowDetailText}
               setShowDetailTitle={setShowDetailTitle}
               textDescription="W naszej ofercie znajdziecie Państwo szkolenia „szyte na miarę”, oznacza 
-           to opracowanie programu szkolenia w oparciu o Państwa indywidualne wytyczne. Szkolenie odbywa się w wyznaczonym i w zaproponowanym przez Państwa czasie.
-            Tego typu forma pozwala na jednorazowe przeszkolenie większej liczby pracowników z wybranego zakresu tematycznego oszczędzając czas i pieniądze.
-             Do tej pory nasza firma zrealizowała ponad 500 szkoleń zamkniętych o przeróżnej tematyce z zakresu badań laboratoryjnych na terenie całej Polski.  
-          W celu ustalenia szczegółów prosimy o wysłanie do nas zapytania, a my postaramy się przedstawić Państwu atrakcyjną ofertę. 
+           to opracowanie programu szkolenia w oparciu o Państwa indywidualne wytyczne. 
           "
               test={test}
               link={setLink}
