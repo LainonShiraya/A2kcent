@@ -128,7 +128,7 @@ function Promotions() {
       <div className="harmonogram-bottom-container">
         <div className="harmonogram-sorts-container harmonogram-sorts-container-admin">
           <div className="harmonogram-sorting harmonogram-sorting-admin">
-            <Link to={`../admin/dashboard/add/Harmonogram`}>
+            <Link to={`../admin/dashboard/courses/add`}>
               <button className="button-oferts button-add">Dodaj</button>
             </Link>
             Sortuj po:

@@ -1,0 +1,30 @@
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  gap: 0.25rem;
+}
+
+.button-warning {
+  background-color: red;
+}
+
+@media only screen and (max-width: 1240px) {
+  .buttons-container {
+    width: 80%;
+  }
+
+  .harmonogram-sorts-container-admin {
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 0.5rem;
+  }
+
+  .harmonogram-sorting-admin {
+    margin: auto;
+    text-align: center;
+  }
+}/*# sourceMappingURL=Ofert_admin.css.map */

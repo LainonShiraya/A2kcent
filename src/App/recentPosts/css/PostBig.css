@@ -1,0 +1,56 @@
+.post-big-container {
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+.post-big-container:hover .post-big-text-container {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.post-big-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  border-radius: 25px;
+  transition: background-color 0.5s ease-out;
+  height: inherit;
+}
+
+.post-big-text-title {
+  font-size: 1.5rem;
+  margin: auto;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.post-big-text-info {
+  margin: auto;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 80%;
+  font-weight: 500;
+  color: white;
+  font-size: 20px;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+  word-break: break-word !important;
+}
+
+.post-big-text-date-container {
+  text-align: center;
+}
+
+.text-post-big-date {
+  text-align: right;
+  margin: 1.4rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 628px) {
+  .post-big-text-container {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}/*# sourceMappingURL=PostBig.css.map */

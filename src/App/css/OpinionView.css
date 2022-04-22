@@ -1,0 +1,38 @@
+.opinion-view-container {
+  width: 80%;
+  margin: auto;
+}
+
+.opinion-list-container {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
+.opinion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.opinion-container h3 {
+  margin-left: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .opinion-list-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .fa-6x {
+    font-size: 4rem !important;
+  }
+}/*# sourceMappingURL=OpinionView.css.map */

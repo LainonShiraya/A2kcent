@@ -30,7 +30,7 @@ function Ofert({ id, title, type, date, price, place }) {
       </div>
       <div className="buttons-container">
         <Link
-          to={`../admin/dashboard/edit/Harmonogram/${id}`}
+          to={`../admin/dashboard/courses/edit/${id}`}
           params={{ id, title }}
         >
           <button className="button-oferts">Edytuj</button>

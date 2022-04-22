@@ -1,0 +1,17 @@
+.oferts-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  gap: 4rem;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .oferts-container {
+    width: 90%;
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=Oferts.css.map */

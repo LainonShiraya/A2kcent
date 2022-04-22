@@ -1,0 +1,103 @@
+.text-title-text {
+  color: white !important;
+  font-size: 4rem !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+  letter-spacing: 1px;
+}
+
+.text-tittle-button-text {
+  color: white;
+  font-size: 2rem;
+  margin: 1rem;
+  text-shadow: none !important;
+  font-weight: 700;
+}
+
+.text-title-text-numbers {
+  color: white;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.text-image-description-green {
+  color: #2f512a;
+  font-size: 3rem;
+}
+
+.text-title-text-small {
+  color: white;
+  font-weight: 300;
+  margin: auto;
+}
+
+.text-image-description-subtext {
+  margin-top: 0.2rem;
+  font-size: 1rem;
+}
+
+.text-posts-title-text {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.text-color-green {
+  color: #2f512a;
+}
+
+.text-quote-text {
+  font-size: 3rem;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+.text-quote-description {
+  font-size: 1rem;
+}
+
+.text-category-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.text-category-titleB {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.newsletter-text-container {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 1260px) {
+  .text-category-title {
+    font-size: 1.5rem;
+  }
+
+  .text-category-titleB {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .text-title-text {
+    font-size: 2.6rem !important;
+  }
+
+  .newsletter-text-container {
+    font-size: 1.5rem;
+  }
+
+  .text-title-text-numbers {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .text-tittle-button-text {
+    font-size: 1.2rem !important;
+  }
+
+  .text-posts-title-text {
+    font-size: 2.5rem !important;
+  }
+}/*# sourceMappingURL=text.css.map */

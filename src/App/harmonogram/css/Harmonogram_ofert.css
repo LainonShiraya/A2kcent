@@ -1,0 +1,323 @@
+.harmonogram-ofert-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.harmonogram-ofert-title-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+.harmonogram-ofert-title-container h2 {
+  color: green;
+  font-weight: 500;
+}
+.harmonogram-ofert-title-container h1 {
+  font-weight: 500;
+}
+
+.harmonogram-ofert-company-inputs-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.input-container-small {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.harmonogram-ofert-company-inputs-container-person {
+  display: flex;
+  flex-direction: column;
+}
+.harmonogram-ofert-company-inputs-container-person .input-container {
+  width: 80%;
+  margin-left: 0;
+}
+
+.harmonogram-ofert-osoba-title-container {
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.harmonogram-ofert-osoba-title-container h2 {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+.harmonogram-ofert-osoba-title-container h2:last-of-type {
+  width: 40%;
+}
+
+.input-container {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.input-container input {
+  margin: auto;
+  margin-bottom: 1.5rem;
+  min-height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  width: 100%;
+}
+.input-container h4 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1rem !important;
+}
+
+.input-long {
+  width: 90%;
+  margin: auto;
+}
+.input-long input {
+  margin: auto;
+  margin-bottom: 1.5rem;
+  min-height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  width: 100%;
+}
+.input-long h4 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.harmongoram-ofert-company-inputs-osoba {
+  width: 40%;
+}
+.harmongoram-ofert-company-inputs-osoba h2 {
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-harmonogram {
+  margin: auto;
+  margin-top: 1.5rem;
+  background-color: #2f512a;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.harmonogram-button-container {
+  margin: auto;
+}
+
+.harmonogram-osoba-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.harmongoram-osoba {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #2f512a;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  border-radius: 15px;
+  word-break: break-all;
+  font-size: 0.5rem !important;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+}
+
+.text-hover h1 {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.text-hover:focus:after, .text-hover:hover:after {
+  content: attr(data-text);
+  overflow: visible;
+  text-overflow: inherit;
+  background: #fff;
+  position: absolute;
+  left: auto;
+  top: auto;
+  width: auto;
+  max-width: 20rem;
+  border: 1px solid #eaebec;
+  padding: 0 0.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28);
+  white-space: normal;
+  word-wrap: break-word;
+  display: block;
+  color: black;
+  margin-top: -1.25rem;
+  font-size: 1rem;
+}
+
+.avatar {
+  font-size: 6rem;
+}
+
+.bin-icon-container {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: right;
+}
+.bin-icon-container:hover {
+  cursor: pointer;
+}
+
+.separator-line {
+  margin-top: 4rem;
+}
+
+.price-calculator-container {
+  text-align: right;
+}
+.price-calculator-container h2 {
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.confirm-button-container {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+.confirm-button-container button {
+  padding: 1rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.person-data-small-res {
+  display: none;
+}
+
+.harmonogram-ofert-upper-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1480px) {
+  .input-container-small {
+    flex-direction: column;
+  }
+  .input-container-small .input-container {
+    margin: 0;
+  }
+
+  .input-long {
+    width: 100%;
+  }
+
+  .confirm-button-container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  .person-data-big-res {
+    display: none;
+  }
+
+  .person-data-small-res {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .harmonogram-ofert-upper-container {
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
+  .harmonogram-ofert-upper-container .harmonogram-ofert-company-inputs-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .harmongoram-ofert-company-inputs-osoba {
+    width: 100%;
+    margin: auto;
+  }
+  .harmongoram-ofert-company-inputs-osoba .harmonogram-ofert-company-inputs-container-person {
+    margin: auto;
+  }
+  .harmongoram-ofert-company-inputs-osoba .harmonogram-ofert-company-inputs-container-person .input-container {
+    margin-left: auto;
+  }
+
+  .harmonogram-button-container {
+    text-align: center;
+  }
+
+  .harmonogram-ofert-container {
+    margin-top: 6rem;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .harmonogram-ofert-container {
+    width: 90%;
+  }
+
+  .harmonogram-ofert-title-container {
+    width: 80%;
+  }
+
+  .harmonogram-ofert-company-inputs-container {
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .input-container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .harmonogram-ofert-title-container {
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    word-wrap: break-word;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Harmonogram_ofert.css.map */

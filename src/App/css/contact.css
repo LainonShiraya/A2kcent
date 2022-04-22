@@ -1,0 +1,116 @@
+.contact-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.contact-title-container {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+.contact-title-container h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #707070;
+  letter-spacing: 0.1em;
+}
+.contact-title-container h2::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: calc(50% - 50px);
+  border-bottom: 2px solid #2f512a;
+  width: 100px;
+  z-index: -1;
+}
+
+.contact-subtitle-container {
+  margin: auto;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.contact-subtitle-container h2 {
+  font-size: 2.2rem;
+}
+
+.contact-message-container {
+  width: 40%;
+  margin: auto;
+  margin-top: 4rem;
+  text-align: center;
+}
+.contact-message-container input {
+  margin: auto;
+  margin-bottom: auto;
+  min-height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  width: 100%;
+}
+.contact-message-container label {
+  color: #707070;
+}
+.contact-message-container input:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.textarea-container p {
+  color: #707070;
+}
+.textarea-container textarea {
+  width: 100%;
+  min-height: 200px;
+  border-radius: 10px;
+  resize: none;
+  padding: 0.2rem;
+}
+
+.button-send {
+  margin-top: 2rem;
+  padding: 1rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.contact-message-split-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contact-info-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4.2rem;
+  text-align: center;
+}
+
+.font-subtitle {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1020px) {
+  .contact-message-container {
+    width: 90%;
+  }
+
+  .contact-message-split-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info-container {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .contact-container {
+    margin-top: 6rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

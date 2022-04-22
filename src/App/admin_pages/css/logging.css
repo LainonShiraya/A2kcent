@@ -1,0 +1,31 @@
+.logging-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.logging-inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40%;
+  margin: auto;
+}
+
+.logging-input-text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.button-newsletter-login {
+  margin-top: 0;
+}
+
+.logging-container {
+  text-align: center;
+}
+.logging-container img {
+  margin-bottom: 2rem;
+  max-width: 40% !important;
+}/*# sourceMappingURL=logging.css.map */
