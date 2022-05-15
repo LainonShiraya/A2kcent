@@ -217,6 +217,7 @@
   width: 60%;
   text-align: center;
   margin: auto;
+  margin-bottom: 2rem;
 }
 .confirm-button-container button {
   padding: 1rem;

@@ -30,6 +30,7 @@ import NavbarAdmin from "../admin_pages/dashboard/navbar/Navbar";
 import HarmonogramAdmin from "../admin_pages/dashboard/courses/harmonogram/Harmonogram_admin";
 import HarmonogramEditAdmin from "../admin_pages/dashboard/courses/harmonogram/HarmonogramEdit_admin";
 import HarmonogramAddAdmin from "../admin_pages/dashboard/courses/harmonogram/HarmonogramAdd_admin";
+import HarmonogramOfertHotel from "../harmonogram/harmonogram_ofert_hotel/Harmonogram_ofert_hotel";
 import {
   BrowserRouter as Router,
   Routes,
@@ -210,6 +211,15 @@ function MainPage() {
                 <>
                   <NavbarAdmin />
                   <HarmonogramAddAdmin />
+                </>
+              }
+            />
+            <Route
+              path="/test"
+              element={
+                <>
+                  <Navbar />
+                  <HarmonogramOfertHotel />
                 </>
               }
             />
