@@ -20,6 +20,7 @@
 .input-title-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 .input-title-container p {
   color: #707070;

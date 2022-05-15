@@ -33,7 +33,7 @@
 }
 
 .ofertsTraining-text-container {
-  width: 80%;
+  width: 60%;
   margin: auto;
   margin-top: 2rem;
   line-height: 1.4;
@@ -54,6 +54,11 @@
 .text-bolded {
   font-weight: 700;
   font-size: 1.5rem !important;
+}
+.text-bolded:hover {
+  color: #2f512a;
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
 }
 
 @media screen and (max-width: 790px) {

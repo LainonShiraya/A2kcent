@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "../add_news/add_news.css";
 const Add_news = () => {
+  const [image, setImage] = useState("");
   return (
     <div className="addNews-container">
       <div className="contact-message-container-admin">
@@ -8,15 +9,24 @@ const Add_news = () => {
           <p>Tytuł aktualności (wymagane)</p>
           <input type="text" name="title" id="title" />
         </div>
+        <div className="input-title-container">
+          <p>Link do podstrony (wymagane)</p>
+          <input type="text" name="subpage-link" id="subpage-link" />
+        </div>
         <div className="contact-select-container">
-          <select name="images" id="images">
+          <select
+            name="images"
+            id="images"
+            onChange={e => setImage(e.target.value)}
+          >
             <option value="image_1">image_1</option>
             <option value="image_2">image_2</option>
             <option value="image_3">image_3</option>
             <option value="image_4">image_4</option>
           </select>
           <div className="image-container-news">
-            <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" />
+            {image.length > 0 && <img src={image} alt={image} />}
+            {image.length < 1 && <h4> Nie znaleziono obrazka</h4>}
           </div>
         </div>
         <div className="textarea-container-admin">

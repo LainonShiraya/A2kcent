@@ -1,5 +1,7 @@
 import React from "react";
 import "../oferts_closed_training/oferts_closed_training.css";
+import { Link } from "react-router-dom";
+
 const Oferts_training = () => {
   return (
     <div className="ofertsTraining-container">
@@ -19,9 +21,10 @@ const Oferts_training = () => {
           firma zrealizowała ponad 500 szkoleń zamkniętych o przeróżnej tematyce
           z zakresu badań laboratoryjnych na terenie całej Polski. W celu
           ustalenia szczegółów prosimy o{" "}
-          <span className="text-bolded text-color-green">
+          <Link to="../Napisz_do_nas" className="text-bolded text-color-green">
+            {" "}
             wysłanie do nas zapytania{" "}
-          </span>{" "}
+          </Link>{" "}
           , a my postaramy się przedstawić Państwu atrakcyjną ofertę.
         </span>
         {/* <span>

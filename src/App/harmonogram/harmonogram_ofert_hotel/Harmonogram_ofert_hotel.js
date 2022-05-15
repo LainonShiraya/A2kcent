@@ -6,7 +6,9 @@ import "react-datetime/css/react-datetime.css";
 import Datetime from "react-datetime";
 import "moment/locale/pl";
 import moment from "moment";
-
+import ReCAPTCHA from "react-google-recaptcha";
+import Footer from "../../footer/Footer";
+import FAQ from "../../faq/Faqs";
 function MainPage() {
   let params = useParams();
   const [osoby, setOsoby] = useState([]);
@@ -17,6 +19,8 @@ function MainPage() {
   const [emailError, setEmailError] = useState("");
   const [hotelDateStart, setHotelDateStart] = useState("");
   const [hotelDateEnd, setHotelDateEnd] = useState("");
+  const [verified, setverified] = useState(false);
+
   const ImieRef = useRef(null);
   const NazwiskoRef = useRef(null);
   const EmailRef = useRef(null);
@@ -66,139 +70,163 @@ function MainPage() {
   };
 
   return (
-    <div className="harmonogram-ofert-container">
-      <div className="harmonogram-ofert-title-container">
-        <h1>Zapisz się na Szkolenie </h1>
-        <h2>{Title}</h2>
-      </div>
-      <div className="harmonogram-ofert-osoba-title-container">
-        <h2>Dane do faktury :</h2>
-        <h2 className="person-data-big-res">Dane Zgłaszanej Osoby :</h2>
-      </div>
-      <div className="harmonogram-ofert-upper-container">
-        <div className="harmonogram-ofert-company-inputs-container">
-          <div className="input-container-small">
-            <div className="input-container">
-              <h4>Nazwa firmy, instytucji :</h4>
-              <input type="text" name="nazwa_firmy" />
-              <h4>Numer Klienta rabatowego :</h4>
-              <input type="text" name="nazwa_firmy" />
-              <h4>NIP/PESEL :</h4>
-              <input type="text" name="nazwa_firmy" />
-            </div>
-            <div className="input-container">
-              <h4>Adres e-mail :</h4>
-              <input type="text" name="nazwa_firmy" />
-              <h4>Telefon :</h4>
-              <input type="text" name="nazwa_firmy" />
-              <h4>Osoba kontaktowa w spr. finansowych :</h4>
-              <input type="text" name="nazwa_firmy" />
-            </div>
-          </div>
-          <div className="input-long">
-            <h4>Adres:</h4>
-            <input type="text" name="nazwa_firmy" />
-          </div>
+    <>
+      <div className="harmonogram-ofert-container">
+        <div className="harmonogram-ofert-title-container">
+          <h1>Zapisz się na Szkolenie </h1>
+          <h2>{Title}</h2>
         </div>
-        <div className="input-person-title-container">
-          <h2 className="person-data-small-res">Dane Zgłaszanej Osoby :</h2>
+        <div className="harmonogram-ofert-osoba-title-container">
+          <h2>Dane do faktury :</h2>
+          <h2 className="person-data-big-res">Dane Zgłaszanej Osoby :</h2>
         </div>
-        <div className="harmongoram-ofert-company-inputs-osoba">
-          <div className="harmonogram-ofert-company-inputs-container-person">
-            <div className="input-container">
-              <h4>Imię :</h4>
-              <input
-                type="text"
-                name="imie_nazwisko_osoba"
-                ref={ImieRef}
-                onKeyUp={e => setImie(e.target.value)}
-              />
-              <h4>Nazwisko :</h4>
-              <input
-                type="text"
-                name="imie_nazwisko_osoba"
-                ref={NazwiskoRef}
-                onKeyUp={e => setNazwisko(e.target.value)}
-              />
-            </div>
-            <div className="input-container">
-              <h4>Zgłaszana osoba E-mail :</h4>
-              <input
-                type="text"
-                name="osoba_email"
-                ref={EmailRef}
-                onKeyUp={e => setEmail(e.target.value)}
-              />
-            </div>
-            <div className="input-container">
-              <h4>Nocleg od :</h4>
-              <div className="course-date">
-                <Datetime
-                  locale="pl"
-                  inputProps={inputProps}
-                  timeFormat={false}
-                  onChange={event => {
-                    setHotelDateStart(event);
-                  }}
-                  isValidDate={current => {
-                    return (
-                      current.isAfter(moment().subtract(1, "day")) &&
-                      current.isBefore(moment().add(2, "day"))
-                    );
-                  }}
-                />
+        <div className="harmonogram-ofert-upper-container">
+          <div className="harmonogram-ofert-company-inputs-container">
+            <div className="input-container-small">
+              <div className="input-container">
+                <h4>Nazwa firmy, instytucji :</h4>
+                <input type="text" name="nazwa_firmy" />
+                <h4>Numer Klienta rabatowego :</h4>
+                <input type="text" name="nazwa_firmy" />
+                <h4>NIP/PESEL :</h4>
+                <input type="text" name="nazwa_firmy" />
+              </div>
+              <div className="input-container">
+                <h4>Adres e-mail :</h4>
+                <input type="text" name="nazwa_firmy" />
+                <h4>Telefon :</h4>
+                <input type="text" name="nazwa_firmy" />
+                <h4>Osoba kontaktowa w spr. finansowych :</h4>
+                <input type="text" name="nazwa_firmy" />
               </div>
             </div>
-            <div className="input-container">
-              <h4>Nocleg do :</h4>
-              <div className="course-date">
-                <Datetime
-                  locale="pl"
-                  inputProps={inputProps}
-                  timeFormat={false}
-                  onChange={event => {
-                    setHotelDateEnd(event);
-                  }}
-                  isValidDate={current => {
-                    return (
-                      current.isAfter(moment().subtract(1, "day")) &&
-                      current.isBefore(moment().add(2, "day"))
-                    );
-                  }}
-                />
-              </div>
+            <div className="input-long">
+              <h4>Adres:</h4>
+              <input type="text" name="nazwa_firmy" />
             </div>
           </div>
-          {emailError}
-          <div className="harmonogram-button-container">
-            <button className="button-harmonogram" onClick={dodajOsobe}>
-              Dodaj Osobę
+          <div className="input-person-title-container">
+            <h2 className="person-data-small-res">Dane Zgłaszanej Osoby :</h2>
+          </div>
+          <div className="harmongoram-ofert-company-inputs-osoba">
+            <div className="harmonogram-ofert-company-inputs-container-person">
+              <div className="input-container">
+                <h4>Imię :</h4>
+                <input
+                  type="text"
+                  name="imie_nazwisko_osoba"
+                  ref={ImieRef}
+                  onKeyUp={e => setImie(e.target.value)}
+                />
+                <h4>Nazwisko :</h4>
+                <input
+                  type="text"
+                  name="imie_nazwisko_osoba"
+                  ref={NazwiskoRef}
+                  onKeyUp={e => setNazwisko(e.target.value)}
+                />
+              </div>
+              <div className="input-container">
+                <h4>Zgłaszana osoba E-mail :</h4>
+                <input
+                  type="text"
+                  name="osoba_email"
+                  ref={EmailRef}
+                  onKeyUp={e => setEmail(e.target.value)}
+                />
+              </div>
+              <div className="input-container">
+                <h4>Nocleg od :</h4>
+                <div className="course-date">
+                  <Datetime
+                    locale="pl"
+                    inputProps={inputProps}
+                    timeFormat={false}
+                    onChange={event => {
+                      setHotelDateStart(event);
+                    }}
+                    isValidDate={current => {
+                      return (
+                        current.isAfter(moment().subtract(1, "day")) &&
+                        current.isBefore(moment().add(2, "day"))
+                      );
+                    }}
+                  />
+                </div>
+              </div>
+              <div className="input-container">
+                <h4>Nocleg do :</h4>
+                <div className="course-date">
+                  <Datetime
+                    locale="pl"
+                    inputProps={inputProps}
+                    timeFormat={false}
+                    onChange={event => {
+                      setHotelDateEnd(event);
+                    }}
+                    isValidDate={current => {
+                      return (
+                        current.isAfter(moment().subtract(1, "day")) &&
+                        current.isBefore(moment().add(2, "day"))
+                      );
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+            {emailError}
+            <div className="harmonogram-button-container">
+              <button className="button-harmonogram" onClick={dodajOsobe}>
+                Dodaj Osobę
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="harmonogram-osoba-container">
+          {osoby.map(data => (
+            <Osoba
+              Id={data.Id}
+              Imie={data.Imie}
+              Nazwisko={data.Nazwisko}
+              Email={data.Email}
+              HotelStart={data.hotelDateStart}
+              HotelEnd={data.hotelDateEnd}
+              osoby={osoby}
+              setOsoby={setOsoby}
+            />
+          ))}
+        </div>
+        <hr className="separator-line" />
+        <div className="price-calculator-container">
+          <h2 className="text-color-green">{price * promocja} PLN</h2>
+        </div>
+        <div className="confirm-button-container">
+          <div className="captcha">
+            {" "}
+            <ReCAPTCHA
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              onChange={value => {
+                console.log("Captcha value: " + value);
+                setverified(!verified);
+              }}
+            />
+          </div>
+          {verified && (
+            <button className="button-send button-newsletter">Potwierdz</button>
+          )}
+          {!verified && (
+            <button
+              className="button-send button-newsletter button-disabled"
+              disabled
+            >
+              Potwierdz
             </button>
-          </div>
+          )}
         </div>
       </div>
-      <div className="harmonogram-osoba-container">
-        {osoby.map(data => (
-          <Osoba
-            Id={data.Id}
-            Imie={data.Imie}
-            Nazwisko={data.Nazwisko}
-            Email={data.Email}
-            HotelStart={data.hotelDateStart}
-            HotelEnd={data.hotelDateEnd}
-            osoby={osoby}
-            setOsoby={setOsoby}
-          />
-        ))}
-      </div>
-      <hr className="separator-line" />
-      <div className="price-calculator-container">
-        <h2 className="text-color-green">{price * promocja} PLN</h2>
-      </div>
-      <div className="confirm-button-container">
-        <button className="button-send button-newsletter">Potwierdz</button>
-      </div>
-    </div>
+      <FAQ />
+      <Footer />
+    </>
   );
 }
 

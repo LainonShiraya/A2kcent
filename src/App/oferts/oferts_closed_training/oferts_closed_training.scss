@@ -1,3 +1,4 @@
+@import "../../generalStyles/colors/colors.scss";
 .header-title-training {
   font-size: 8rem;
   color: white;
@@ -31,7 +32,7 @@
   margin-top: 0;
 }
 .ofertsTraining-text-container {
-  width: 80%;
+  width: 60%;
   margin: auto;
   margin-top: 2rem;
   line-height: 1.4;
@@ -52,6 +53,11 @@
 .text-bolded {
   font-weight: 700;
   font-size: 1.5rem !important;
+  &:hover {
+    color: $base-green;
+    text-decoration: underline !important;
+    text-decoration-thickness: 2px !important;
+  }
 }
 
 @media screen and (max-width: 790px) {

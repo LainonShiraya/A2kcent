@@ -234,6 +234,51 @@
   justify-content: space-between;
 }
 
+.harmonogram-regulamin {
+  color: #707070;
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .span-border {
+    border: 1px dashed #707070;
+    padding: 1rem;
+  }
+  .radio-options {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .harmonogram-bulletpoints {
+    margin-top: 1rem;
+    h6 {
+      margin-bottom: 1rem;
+    }
+    .bold {
+      font-weight: 700;
+      color: black;
+    }
+    h5 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+.captcha {
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.button-disabled {
+  background-color: gray;
+  &:hover {
+    background-color: gray;
+    color: white;
+  }
+}
 @media only screen and (max-width: 1480px) {
   .input-container-small {
     flex-direction: column;
@@ -299,6 +344,9 @@
   .input-container {
     width: 80%;
   }
+  .harmonogram-regulamin {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 610px) {
   .harmonogram-ofert-title-container {
@@ -309,5 +357,8 @@
   }
   .input-container {
     width: 100%;
+  }
+  .harmonogram-regulamin {
+    width: 90%;
   }
 }

@@ -1,7 +1,6 @@
 .navbar-container {
   background-color: white;
   padding: 1rem;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   display: flex;
@@ -150,7 +149,6 @@
 
 .navbar-general-container {
   width: 100%;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: white;
@@ -199,7 +197,6 @@
 
   .navbar-mobile {
     display: inline;
-    position: -webkit-sticky;
     position: sticky;
     top: 4rem;
     margin: 1rem;
@@ -207,7 +204,6 @@
 
   .navbar-general-container {
     display: block;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     height: 0;

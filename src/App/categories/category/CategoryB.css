@@ -14,6 +14,7 @@
 }
 .category-containerB:hover, .category-containerB:active {
   color: #2f512a;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
 }
 .category-containerB:active {

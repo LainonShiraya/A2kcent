@@ -1,7 +1,6 @@
 .navbar-container {
   background-color: white;
   padding: 1rem;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   display: flex;
@@ -48,6 +47,7 @@
   border: 2px solid #2f512a;
 }
 .navbar-button-contacts:hover, .navbar-button-contacts:active, .navbar-button-contacts:focus {
+  -webkit-box-shadow: 10px 8px 19px -3px rgba(0, 0, 0, 0.4);
   box-shadow: 10px 8px 19px -3px rgba(0, 0, 0, 0.4);
   color: white;
   border: 2px solid #2f512a;
@@ -170,7 +170,6 @@
 
 .navbar-general-container {
   width: 100%;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 50;
@@ -246,7 +245,6 @@
 
   .navbar-mobile {
     display: block !important;
-    position: -webkit-sticky;
     position: sticky;
   }
   .navbar-mobile button {
@@ -256,7 +254,6 @@
 
   .navbar-general-container {
     display: block;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     height: 0;

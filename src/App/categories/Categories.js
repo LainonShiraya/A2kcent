@@ -94,7 +94,7 @@ function Categories() {
       </div>
       <div className="categories-text">
         <h3 className="text-quote-text">
-          <span className="text-color-green"> Popularne szkolenia</span>
+          <span className="text-color-green"> Najbliższe szkolenia</span>
         </h3>
         <span className="text-quote-description">
           Skorzystaj z ponad 200 indywidualnie przygotowanych szkoleń do Twoich

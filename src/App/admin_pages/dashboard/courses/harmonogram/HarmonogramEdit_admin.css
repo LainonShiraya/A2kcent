@@ -1,0 +1,18 @@
+.harmonogramEdit-container {
+  width: min(80vw, 600px);
+  margin: auto;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.harmonogramEdit-body-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.course-date {
+  width: 50%;
+  margin: auto;
+}/*# sourceMappingURL=HarmonogramEdit_admin.css.map */
