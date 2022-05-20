@@ -293,7 +293,11 @@
     width: 80%;
   }
 }
-
+.input_no_arrows {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
 @media only screen and (max-width: 1090px) {
   .person-data-big-res {
     display: none;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Osoba = ({ Id, Imie, Nazwisko, Email, osoby, setOsoby }) => {
+const Osoba = ({ Id, Imie, Nazwisko, Email, osoby, telefon, setOsoby }) => {
   const deleteOsoba = () => {
     const osoba = osoby.filter(element => element.Id !== Id);
     console.log(osoba);
@@ -20,6 +20,9 @@ const Osoba = ({ Id, Imie, Nazwisko, Email, osoby, setOsoby }) => {
       </div>
       <div className="text-hover " data-text={Email}>
         <h1 data-text={Email}>{Email}</h1>
+      </div>
+      <div className="text-hover " data-text={telefon}>
+        <h1 data-text={telefon}>{telefon}</h1>
       </div>
     </div>
   );

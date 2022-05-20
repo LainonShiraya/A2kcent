@@ -8,6 +8,7 @@ import Arcelormittal from "../../../assets/images/arcelormittal.jpg";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import TrackVisibility from "react-on-screen";
+import Carousel from "./carousel/carousel";
 
 const About_us_new = () => {
   return (
@@ -114,40 +115,27 @@ const About_us_new = () => {
         </div>
         <div className="aboutUsNew-lecturers-text-container">
           {" "}
-          <h1 className="text-posts-title-text">John Doe</h1>{" "}
+          <h1 className="text-posts-title-text">Agnieszka Doe</h1>{" "}
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            consectetur, est sed posuere vehicula, sem elit sollicitudin ipsum,
-            sed condimentum odio mi eget dolor. Duis sit amet convallis est.
-            Nullam tincidunt blandit velit, vel interdum ligula malesuada sit
-            amet. Suspendisse potenti. In hac habitasse platea dictumst. Proin
-            rhoncus justo eget erat ornare, vel interdum ligula egestas. Integer
-            porttitor, purus sed eleifend varius, dui dui sollicitudin mauris,
-            ac commodo neque enim in felis. Nam tincidunt diam vitae vulputate
-            feugiat. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. Integer eu tortor semper, dictum
-            ligula at, finibus lacus. Nulla congue commodo rhoncus. Vestibulum
-            felis quam, tincidunt vitae magna nec, bibendum tincidunt libero.
+            Jestem absolwentką Wydziału Chemii UW. Doświadczenie zawodowe
+            zdobywałam w znanych międzynarodowych koncernach: kosmetycznym,
+            farmaceutycznym i chemicznym. W pracy wszystko musi być na miejscu,
+            choć kompromisy też się zdarzają :)
           </span>
         </div>
       </div>
       <div className="aboutUsNew-lecturers-container flex-reverse">
         <div className="aboutUsNew-lecturers-text-container">
           {" "}
-          <h1 className="text-posts-title-text">John Doe</h1>{" "}
+          <h1 className="text-posts-title-text">Ania Doe</h1>{" "}
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            consectetur, est sed posuere vehicula, sem elit sollicitudin ipsum,
-            sed condimentum odio mi eget dolor. Duis sit amet convallis est.
-            Nullam tincidunt blandit velit, vel interdum ligula malesuada sit
-            amet. Suspendisse potenti. In hac habitasse platea dictumst. Proin
-            rhoncus justo eget erat ornare, vel interdum ligula egestas. Integer
-            porttitor, purus sed eleifend varius, dui dui sollicitudin mauris,
-            ac commodo neque enim in felis. Nam tincidunt diam vitae vulputate
-            feugiat. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. Integer eu tortor semper, dictum
-            ligula at, finibus lacus. Nulla congue commodo rhoncus. Vestibulum
-            felis quam, tincidunt vitae magna nec, bibendum tincidunt libero.
+            Z laboratoriami badawczymi związana jestem przez całe swoje życie
+            zawodowe. Ukończyłam Wydział Technologii Chemicznej Politechniki
+            Poznańskiej oraz studia podyplomowe z zakresu Uzdatniania Wody i
+            Oczyszczania Ścieków na Wydziale Budownictwa, Architektury i
+            Inżynierii Środowiska PP. Bardzo chciałam poszerzać swoje
+            kompetencje z zakresu zarządzana jakością, dlatego jestem także
+            absolwentką studiów MBA in Quality Management.
           </span>
         </div>
         <div className="aboutUsNew-lecturers-image-container">
@@ -156,28 +144,14 @@ const About_us_new = () => {
       </div>
       <div className="aboutUsNew-companies-container">
         <div className="aboutUsNew-companies-text-container">
-          <h1>Nasi Klienci</h1>
+          <h1>Komentarze o szkoleniach</h1>
           <span>
-            od momentu powstania mieliśmy przyjemność pracować z
-            przedstawicielami rynku
+            od momentu powstania mieliśmy przyjemność usłyszeć od Państwa
+            poniższe opinie o naszej firmie
           </span>
         </div>
-        <div className="aboutUsNew-companies-images-container">
-          <img src={Intertek} alt="company" />
-          <img src={Arcelormittal} alt="company" />
-          <img src={Mekovita} alt="company" />
-          <img src={Intertek} alt="company" />
-          <img src={Arcelormittal} alt="company" />
-          <img src={Mekovita} alt="company" />
-          <img src={Intertek} alt="company" />
-          <img src={Arcelormittal} alt="company" />
-          <img src={Mekovita} alt="company" />
-          <img src={Intertek} alt="company" />
-          <img src={Arcelormittal} alt="company" />
-          <img src={Mekovita} alt="company" />
-          <img src={Intertek} alt="company" />
-          <img src={Arcelormittal} alt="company" />
-          <img src={Mekovita} alt="company" />
+        <div className="aboutUsNew-companies-carousel-container">
+          <Carousel />
         </div>
       </div>
     </div>

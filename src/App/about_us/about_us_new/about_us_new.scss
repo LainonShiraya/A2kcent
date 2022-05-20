@@ -55,7 +55,9 @@
 .aboutUsNew-statistics-text-container {
   width: 50%;
   text-align: left;
+  margin: auto;
   margin-bottom: 4rem;
+  text-align: center;
 }
 .aboutUsNew-statistics-container {
   // display: flex;
@@ -64,12 +66,12 @@
   // gap: 2rem;
   // margin-top: 2rem;
   width: 60%;
-  float: right;
   display: grid;
-  grid-template-columns: repeat(2, calc(40% - 15px));
+  grid-template-columns: repeat(4, calc(40% - 15px));
   grid-gap: 25px;
   margin-bottom: 10rem;
-  justify-content: end;
+  justify-content: center;
+  margin: auto;
 }
 .aboutUsNew-statistics-detail {
   width: 80%;
@@ -103,7 +105,7 @@
   }
 }
 .aboutUsNew-lecturers-container {
-  width: 65%;
+  width: 50%;
   margin: auto;
   margin-top: 10rem;
   display: flex;
@@ -115,7 +117,7 @@
 }
 .aboutUsNew-lecturer-image {
   margin: auto;
-  height: 600px;
+  height: 500px;
   border-radius: 10%;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
@@ -135,7 +137,7 @@
   margin: auto;
   margin-top: 10rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -165,7 +167,11 @@
   float: right;
   margin-bottom: 4rem;
 }
-
+.aboutUsNew-companies-carousel-container {
+  width: 60%;
+  margin: auto;
+  padding: 1rem;
+}
 @media only screen and (max-width: 1440px) {
   .aboutUsNew-header-image {
     width: 80%;
@@ -279,6 +285,9 @@
     justify-content: center;
     width: 100%;
   }
+  .aboutUsNew-companies-carousel-container {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 680px) {
   .aboutUsNew-statistics-container {
@@ -315,6 +324,12 @@
     width: 90%;
   }
   .aboutUsNew-companies-text-container {
+    width: 90%;
+  }
+  .aboutUsNew-companies-carousel-container {
+    width: 100%;
+  }
+  .aboutUsNew-companies-container {
     width: 90%;
   }
 }

@@ -1,7 +1,9 @@
-import React from "react";
 import "../contact/contact.css";
-
+import React, { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 const Contact = () => {
+  const [verified, setverified] = useState(false);
+
   return (
     <div className="contact-container">
       <div className="contact-title-container">
@@ -43,7 +45,27 @@ const Contact = () => {
             <p>Wiadomość (wymagane)</p>
             <textarea></textarea>
           </div>
-          <button className="button-send button-newsletter">Wyślij</button>
+          <div className="captcha">
+            {" "}
+            <ReCAPTCHA
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              onChange={value => {
+                console.log("Captcha value: " + value);
+                setverified(!verified);
+              }}
+            />
+          </div>
+          {verified && (
+            <button className="button-send button-newsletter">Wyślij</button>
+          )}
+          {!verified && (
+            <button
+              className="button-send button-newsletter button-disabled"
+              disabled
+            >
+              Wyślij
+            </button>
+          )}
         </div>
       </div>
     </div>

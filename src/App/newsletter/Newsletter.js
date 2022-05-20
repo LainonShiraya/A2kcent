@@ -1,6 +1,9 @@
 import "./Newsletter.css";
+import React, { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function RecentPosts() {
+  const [verified, setverified] = useState(false);
   return (
     <div className="container">
       <div className="newsletter-container">
@@ -19,7 +22,23 @@ function RecentPosts() {
       </div>
       <div className="newsletter-input-container">
         <input type="text" placeholder="Email" className="input-newsletter" />
-        <button className="button-newsletter">Zapisz się</button>
+        <div className="captcha">
+          {" "}
+          <ReCAPTCHA
+            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            onChange={value => {
+              console.log("Captcha value: " + value);
+              setverified(!verified);
+            }}
+          />
+        </div>
+        {verified && <button className="button-newsletter">Zapisz się</button>}
+
+        {!verified && (
+          <button className="button-newsletter button-disabled" disabled>
+            Zapisz się
+          </button>
+        )}
       </div>
     </div>
   );

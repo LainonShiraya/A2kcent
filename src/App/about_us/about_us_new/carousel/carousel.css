@@ -1,0 +1,30 @@
+.control-next {
+  border: none !important;
+}
+
+.margin-top-carousel {
+  margin-top: 1rem;
+}
+
+.carousel .control-dots {
+  display: none;
+}
+
+.carousel-text {
+  display: block;
+  margin: auto;
+  margin-top: 4rem;
+  width: 90%;
+  position: relative;
+}
+.carousel-text p {
+  margin-top: 0.5rem;
+}
+
+.carousel .control-prev.control-arrow::before {
+  border-right: 8px solid #000 !important;
+}
+
+.carousel .control-next.control-arrow::before {
+  border-left: 8px solid #000 !important;
+}/*# sourceMappingURL=carousel.css.map */

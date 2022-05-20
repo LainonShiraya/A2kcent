@@ -7,7 +7,16 @@ const HarmonogramEdit_admin = () => {
   let inputProps = {
     placeholder: "Data szkolenia",
   };
+  let czasTrwania = {
+    placeholder: "Czas trwania szkolenia",
+  };
+  let dataKoncowa = {
+    placeholder: "Dzień zakończenia szkolenia",
+  };
   const [mode, setMode] = useState(false);
+  const [priceChange, setPriceChange] = useState(false);
+  const [moreDay, setMoreDay] = useState(false);
+
   return (
     <div className="harmonogramEdit-container">
       <div className="hamronogramEdit-title-container">
@@ -80,6 +89,7 @@ const HarmonogramEdit_admin = () => {
               name="inlineRadioOptions"
               id="inlineRadio1"
               value="option1"
+              checked
             />
             <label class="form-check-label" for="inlineRadio1">
               Szkolenie bez noclegu
@@ -105,7 +115,45 @@ const HarmonogramEdit_admin = () => {
           <input class="form-control" type="file" id="formFile" />
         </div>
         <div className="course-date">
+          Termin szkolenia
           <Datetime locale="pl" inputProps={inputProps} />
+        </div>
+        <div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOption1Day"
+              id="inlineRadioOption1Day_1"
+              value="inlineRadioOption1Day_1"
+              defaultChecked
+              onClick={e => {
+                setMoreDay(false);
+              }}
+            />
+            <label class="form-check-label" for="inlineRadioOption1Day_1">
+              Szkolenie jednodniowe
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOption1Day"
+              id="inlineRadioOption1Day_1"
+              value="inlineRadioOption1Day_1"
+              onClick={e => {
+                setMoreDay(true);
+              }}
+            />
+            <label class="form-check-label" for="inlineRadioOption1Day_1">
+              Szkolenie wielodniowe
+            </label>
+          </div>
+          {moreDay && <Datetime locale="pl" inputProps={dataKoncowa} />}
+          {!moreDay && (
+            <Datetime locale="pl" dateFormat={false} inputProps={czasTrwania} />
+          )}
         </div>
         <div class="input-group mb-3">
           <input
@@ -118,6 +166,70 @@ const HarmonogramEdit_admin = () => {
           <span class="input-group-text" id="basic-addon2">
             PLN
           </span>
+        </div>
+        <div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptionPrice"
+              id="inlineRadioPrice_1"
+              value="optionPrice_1"
+              onClick={e => {
+                setPriceChange(false);
+              }}
+              defaultChecked
+            />
+            <label class="form-check-label" for="inlineRadioPrice_1">
+              Stała cena dla wszystkich osób
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptionPrice"
+              id="inlineRadioPrice_2"
+              value="optionPrice_2"
+              onClick={e => {
+                setPriceChange(true);
+              }}
+            />
+            <label class="form-check-label" for="inlineRadioPrice_2">
+              Inna cena za kolejne osoby poza pierwszą
+            </label>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          {priceChange && (
+            <>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Cena szkolenia za kolejną osobę"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2">
+                PLN
+              </span>
+            </>
+          )}
+          {!priceChange && (
+            <>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Cena szkolenia za kolejną osobę"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+                disabled
+              />
+              <span class="input-group-text" id="basic-addon2">
+                PLN
+              </span>
+            </>
+          )}
         </div>
       </div>
       <button className="button-newsletter admin-button-margin"> Edytuj</button>

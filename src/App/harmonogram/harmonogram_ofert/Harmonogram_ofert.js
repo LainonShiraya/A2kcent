@@ -11,10 +11,13 @@ function MainPage() {
   const [Nazwisko, setNazwisko] = useState("");
   const [Email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
+  const [telefon, setTelefon] = useState("");
   const [verified, setverified] = useState(false);
   const ImieRef = useRef(null);
   const NazwiskoRef = useRef(null);
   const EmailRef = useRef(null);
+  const TelefonRef = useRef(null);
+
   const Title = params.title; // z bazy danych
   const price = 500; // z bazy danych
   const promocja = osoby.length; // tutaj dodać wzór na zniżkę zależnie od osób
@@ -23,25 +26,35 @@ function MainPage() {
   const dodajOsobe = () => {
     const emailRegex = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/;
     setEmailError("");
+    console.log(telefon);
     if (
       ImieRef.current.value.length > 2 &&
       NazwiskoRef.current.value.length > 2 &&
-      EmailRef.current.value.length > 2
+      EmailRef.current.value.length > 2 &&
+      TelefonRef.current.value.length === 9
     ) {
       if (emailRegex.test(Email)) {
         setId(Id + 1);
-        setOsoby([...osoby, { Id, Imie, Nazwisko, Email }]);
+        setOsoby([...osoby, { Id, Imie, Nazwisko, Email, telefon }]);
         ImieRef.current.value = "";
         NazwiskoRef.current.value = "";
         EmailRef.current.value = "";
+        TelefonRef.current.value = "";
         setNazwisko("");
         setImie("");
         setEmail("");
+        setTelefon("");
       } else {
         setEmailError("Wprowadzony e-mail jest niepoprawny!");
       }
     } else {
-      setEmailError("Pola nie mogą być puste!");
+      if (telefon === "") {
+        setEmailError("Numer telefonu musi zawierać tylko cyfry!");
+      } else if (telefon.length !== 9) {
+        setEmailError("Numer telefonu musi wynosić 9 cyfr!");
+      } else {
+        setEmailError("Pola nie mogą być puste!");
+      }
     }
   };
 
@@ -57,11 +70,23 @@ function MainPage() {
       </div>
       <div className="harmonogram-ofert-upper-container">
         <div className="harmonogram-ofert-company-inputs-container">
-          <div className="input-container-small">
+          <div className="input-long">
+            <h4>Nazwa firmy, instytucji :</h4>
+            <input type="text" name="nazwa_firmy" />
+            <h4>Adres:</h4>
+            <input type="text" name="adres_firmy" />
+            <h4>NIP/PESEL :</h4>
+            <input type="text" name="nazwa_firmy" />
+            <h4>Osoba kontaktowa w spr. finansowych :</h4>
+            <input type="text" name="nazwa_firmy" />
+            <h4>Adres e-mail :</h4>
+            <input type="text" name="nazwa_firmy" />
+            <h4>Telefon :</h4>
+            <input type="text" name="nazwa_firmy" />
+          </div>
+          {/* <div className="input-container-small">
             <div className="input-container">
               <h4>Nazwa firmy, instytucji :</h4>
-              <input type="text" name="nazwa_firmy" />
-              <h4>Numer Klienta rabatowego :</h4>
               <input type="text" name="nazwa_firmy" />
               <h4>NIP/PESEL :</h4>
               <input type="text" name="nazwa_firmy" />
@@ -74,11 +99,7 @@ function MainPage() {
               <h4>Osoba kontaktowa w spr. finansowych :</h4>
               <input type="text" name="nazwa_firmy" />
             </div>
-          </div>
-          <div className="input-long">
-            <h4>Adres:</h4>
-            <input type="text" name="nazwa_firmy" />
-          </div>
+          </div> */}
         </div>
         <div className="input-person-title-container">
           <h2 className="person-data-small-res">Dane Zgłaszanej Osoby :</h2>
@@ -102,12 +123,24 @@ function MainPage() {
               />
             </div>
             <div className="input-container">
-              <h4>Zgłaszana osoba E-mail :</h4>
+              <h4> Adres E-mail Zgłaszanej osoby :</h4>
               <input
                 type="text"
                 name="osoba_email"
                 ref={EmailRef}
                 onKeyUp={e => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="input-container">
+              <h4>Nr telefonu zgłaszanej osoby: </h4>
+              <input
+                type="number"
+                name="osoba_telefon"
+                className="input_no_arrows"
+                ref={TelefonRef}
+                onKeyUp={e => {
+                  setTelefon(e.target.value);
+                }}
               />
             </div>
           </div>
@@ -127,6 +160,7 @@ function MainPage() {
             Nazwisko={data.Nazwisko}
             Email={data.Email}
             osoby={osoby}
+            telefon={data.telefon}
             setOsoby={setOsoby}
           />
         ))}
