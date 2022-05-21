@@ -1,0 +1,41 @@
+@import "../../generalStyles/colors/colors.scss";
+.print-logo {
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.print-title {
+  color: $base-green;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.print-firma {
+  margin: 0.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.print-osoby {
+  column-gap: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+  width: 98%;
+  td {
+    border: 2px solid black;
+    word-break: break-all;
+    padding: 0.4rem;
+  }
+}
+
+.print-regulamin {
+  color: #707070;
+  border: 1px dashed #707070;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}

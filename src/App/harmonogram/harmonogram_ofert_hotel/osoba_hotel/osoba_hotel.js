@@ -5,6 +5,7 @@ const Osoba = ({
   Imie,
   Nazwisko,
   Email,
+  telefon,
   osoby,
   setOsoby,
   HotelStart,
@@ -29,6 +30,9 @@ const Osoba = ({
       </div>
       <div className="text-hover " data-text={Email}>
         <h1 data-text={Email}>{Email}</h1>
+      </div>
+      <div className="text-hover " data-text={telefon}>
+        <h1 data-text={telefon}>{telefon}</h1>
       </div>
       <div className="text-hover " data-text={HotelStart.format("DD-MM-YYYY")}>
         <h1 data-text={HotelStart.format("DD-MM-YYYY")}>

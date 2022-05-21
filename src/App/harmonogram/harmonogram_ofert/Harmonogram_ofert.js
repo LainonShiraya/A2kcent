@@ -3,21 +3,31 @@ import { useParams } from "react-router-dom";
 import React, { useState, useEffect, useRef } from "react";
 import Osoba from "../harmonogram_ofert/osoba/osoba";
 import ReCAPTCHA from "react-google-recaptcha";
+import PrintComponent from "../harmonogram_print/PrintComponent";
 function MainPage() {
   let params = useParams();
   const [osoby, setOsoby] = useState([]);
   const [Imie, setImie] = useState("");
   let [Id, setId] = useState(0);
+  const [tax, setTax] = useState(false);
+
   const [Nazwisko, setNazwisko] = useState("");
   const [Email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const [telefon, setTelefon] = useState("");
   const [verified, setverified] = useState(false);
+
+  const [nazwa_firmy, setNazwaFirmy] = useState("");
+  const [adres, setAdres] = useState("");
+  const [nip_pesel, setNipPesel] = useState("");
+  const [osoba_kontakt, setOsobaKontakt] = useState("");
+  const [emailFirma, setEmailFirma] = useState("");
+  const [telefonFirma, setTelefonFirma] = useState("");
+
   const ImieRef = useRef(null);
   const NazwiskoRef = useRef(null);
   const EmailRef = useRef(null);
   const TelefonRef = useRef(null);
-
   const Title = params.title; // z bazy danych
   const price = 500; // z bazy danych
   const promocja = osoby.length; // tutaj dodać wzór na zniżkę zależnie od osób
@@ -72,17 +82,41 @@ function MainPage() {
         <div className="harmonogram-ofert-company-inputs-container">
           <div className="input-long">
             <h4>Nazwa firmy, instytucji :</h4>
-            <input type="text" name="nazwa_firmy" />
+            <input
+              type="text"
+              name="nazwa_firmy"
+              onChange={e => setNazwaFirmy(e.target.value)}
+            />
             <h4>Adres:</h4>
-            <input type="text" name="adres_firmy" />
+            <input
+              type="text"
+              name="adres_firmy"
+              onChange={e => setAdres(e.target.value)}
+            />
             <h4>NIP/PESEL :</h4>
-            <input type="text" name="nazwa_firmy" />
+            <input
+              type="text"
+              name="nazwa_firmy"
+              onChange={e => setNipPesel(e.target.value)}
+            />
             <h4>Osoba kontaktowa w spr. finansowych :</h4>
-            <input type="text" name="nazwa_firmy" />
+            <input
+              type="text"
+              name="nazwa_firmy"
+              onChange={e => setOsobaKontakt(e.target.value)}
+            />
             <h4>Adres e-mail :</h4>
-            <input type="text" name="nazwa_firmy" />
+            <input
+              type="text"
+              name="nazwa_firmy"
+              onChange={e => setEmailFirma(e.target.value)}
+            />
             <h4>Telefon :</h4>
-            <input type="text" name="nazwa_firmy" />
+            <input
+              type="text"
+              name="nazwa_firmy"
+              onChange={e => setTelefonFirma(e.target.value)}
+            />
           </div>
           {/* <div className="input-container-small">
             <div className="input-container">
@@ -192,6 +226,9 @@ function MainPage() {
               name="inlineRadioOptions"
               id="inlineRadio1"
               value="option1"
+              onClick={() => {
+                setTax(true);
+              }}
             />
             <label class="form-check-label" for="inlineRadio1">
               tak
@@ -204,6 +241,9 @@ function MainPage() {
               name="inlineRadioOptions"
               id="inlineRadio2"
               value="option2"
+              onClick={() => {
+                setTax(false);
+              }}
             />
             <label class="form-check-label" for="inlineRadio2">
               nie
@@ -390,6 +430,17 @@ function MainPage() {
             Potwierdz
           </button>
         )}
+        <PrintComponent
+          nazwa_szkolenia={Title}
+          nazwa_firmy={nazwa_firmy}
+          adres={adres}
+          nip_pesel={nip_pesel}
+          osoba_kontakt={osoba_kontakt}
+          email={emailFirma}
+          telefon={telefonFirma}
+          tax={tax}
+          osoby={osoby}
+        />
       </div>
     </div>
   );
